@@ -22,12 +22,14 @@ title: Home
 
 <div class="widget">
 <h2 class="widget-title">News & Updates</h2>
+<p class="fact-note">All News items are fact-checked; sources are linked where applicable.</p>
 
 <ul>
-<li>2025 — COSYNE accepted: Nonsense-free behavioral correlation in mouse V1 (co-author). Short plain-English summary: separating behavior-driven vs. sensory-driven components clarifies what correlations actually mean.</li>
+<li>2025 — COSYNE accepted: Nonsense-free behavioral correlation in mouse V1 (co-author).</li>
 <li>2024 — COSYNE: Behavioral correlation integration in mouse V1 (co-author). <a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">Abstract</a></li>
 <li>2023 — SfN: Axial resolution vs. functional retrieval in 2p calcium imaging (presenting author). <a href="/assets/neuro/SfN_Poster.pdf">Poster</a></li>
 <li>Resource — ICADCS: 1st International Conference on AI, Data Science, Cyber Security and Smart Manufacturing for Sustainable Development. <a href="https://icadcs.vikrantuniversity.ac.in/" target="_blank" rel="noopener">Conference site</a></li>
+<li><a href="/news.html">See all news →</a></li>
 </ul>
 </div>
 
@@ -72,4 +74,36 @@ title: Home
 <ul>
 <li><a href="/assets/cv/academic_cv.pdf">Academic CV (PDF)</a></li>
 </ul>
+</div>
+
+<div class="widget">
+<h2 class="widget-title">Selected Publications</h2>
+<ul class="publications-list">
+  <li>
+    <div class="publication-title">Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1.</div>
+    <div class="publication-authors">Yu, P., <strong>Yoon, H.A.</strong>, et al.</div>
+    <div class="publication-venue">COSYNE 2025</div>
+  </li>
+  <li>
+    <div class="publication-title">Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.</div>
+    <div class="publication-authors">Yu, P., <strong>Yoon, H.A.</strong>, et al.</div>
+    <div class="publication-venue"><a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">COSYNE 2024 Abstract (PDF)</a></div>
+  </li>
+  <li>
+    <div class="publication-title">Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity.</div>
+    <div class="publication-authors"><strong>Yoon, H.A.</strong>, Charles, A., Ji, N.</div>
+    <div class="publication-venue"><a href="/assets/neuro/SfN_Poster.pdf">SfN 2023 Poster (PDF)</a></div>
+  </li>
+</ul>
+<p><a href="/publications.html" class="btn btn-secondary">View all publications</a></p>
+</div>
+
+<div class="widget">
+<h2 class="widget-title">Teaching & Mentoring</h2>
+<ul>
+  <li><strong>NEU C62: Drugs and the Brain</strong>, GSI (Fall 2025)</li>
+  <li><strong>EduExplora</strong>: Ethics of Educational AI; Medical Imaging (2023–2025)</li>
+  <li><strong>MCB 1AL</strong>: General Biology Lab, GSI (2020–2021)</li>
+</ul>
+<p><a href="/teaching.html" class="btn btn-secondary">Teaching details and mentoring</a></p>
 </div>

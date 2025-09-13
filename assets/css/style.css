@@ -351,6 +351,14 @@ li {
     font-weight: 600;
 }
 
+/* Small informational note styling */
+.fact-note {
+    font-size: 0.9em;
+    color: #64748b;
+    font-style: italic;
+    margin: 6px 0 10px;
+}
+
 /* Publications Styling */
 .publications-list {
     list-style: none;

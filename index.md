@@ -22,10 +22,11 @@ title: Home
 
 <div class="widget">
 <h2 class="widget-title">News & Updates</h2>
-<p class="fact-note">All News items are fact-checked; sources are linked where applicable.</p>
 
 <ul>
 <li>2025 — COSYNE accepted: Nonsense-free behavioral correlation in mouse V1 (co-author).</li>
+<li>2024 — Graduate Diversity and Community Fellowship ($7,500), UC Berkeley</li>
+<li>2024 — Korean Honor Scholarship ($3,000), Korean Embassy in the U.S.A.</li>
 <li>2024 — COSYNE: Behavioral correlation integration in mouse V1 (co-author). <a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">Abstract</a></li>
 <li>2023 — SfN: Axial resolution vs. functional retrieval in 2p calcium imaging (presenting author). <a href="/assets/neuro/SfN_Poster.pdf">Poster</a></li>
 <li>Resource — ICADCS: 1st International Conference on AI, Data Science, Cyber Security and Smart Manufacturing for Sustainable Development. <a href="https://icadcs.vikrantuniversity.ac.in/" target="_blank" rel="noopener">Conference site</a></li>
@@ -141,6 +142,17 @@ title: Home
   </li>
 </ul>
 <p><a href="/publications.html" class="btn btn-secondary">View all publications</a></p>
+</div>
+
+<div class="widget">
+<h2 class="widget-title">Leadership & Service</h2>
+<ul>
+  <li><strong>SPIE, Optica, IEEE Photonics Society</strong>, UC Berkeley Chapter President (2023-24)</li>
+  <li><strong>UC Berkeley KSEA Mentor</strong>, Graduate Mentor (2023)</li>
+  <li><strong>UC Berkeley Society of Women Engineers</strong>, Graduate Mentor (2023)</li>
+  <li><strong>MIT Educational Council</strong>, Interviewer (2020-)</li>
+  <li><strong>MIT MechE Student Advisory Committee</strong>, Committee Member (2017-2019)</li>
+</ul>
 </div>
 
 <div class="widget">

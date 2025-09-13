@@ -34,7 +34,7 @@ title: Home
 </div>
 
 <div class="widget">
-<h2 class="widget-title">Research Snapshot</h2>
+<h2 class="widget-title">Current Research</h2>
 
 <p>I develop methods that make imaging data more informative, not just bigger. Current focus areas:</p>
 
@@ -43,6 +43,40 @@ title: Home
 <li>Multimodal decoding (calcium + voltage)</li>
 <li>High-throughput pipelines (toward kHz systems)</li>
 </ul>
+</div>
+
+<div class="widget">
+<h2 class="widget-title">Research Interests</h2>
+
+<p>Biomedical Optics, Population Imaging (Calcium + Voltage), Systems Neuroscience, Machine Learning</p>
+
+<p><a href="/research.html" class="btn btn-secondary">View detailed research experience</a></p>
+</div>
+
+<div class="widget">
+<h2 class="widget-title">Featured Projects</h2>
+
+<div class="projects-grid">
+  <div class="project-card">
+    <h4>High-Speed Neural Imaging System</h4>
+    <p>Real-time computer vision pipeline processing 10,000+ frames/sec of neural calcium imaging data. CNN architectures for simultaneous voltage and calcium signal detection.</p>
+    <p><strong>Technologies:</strong> Python, PyTorch, CUDA, OpenCV</p>
+  </div>
+  
+  <div class="project-card">
+    <h4>Medical OCT Flow Analysis System</h4>
+    <p>Portable optical coherence tomography system for coronary artery flow measurement. ML models for automated vessel analysis, reducing diagnostic time by 60%.</p>
+    <p><strong>Technologies:</strong> Python, MATLAB, Signal Processing</p>
+  </div>
+  
+  <div class="project-card">
+    <h4>Flexible Neural Interface Technology</h4>
+    <p>Designed and fabricated flexible all-polymer multimodal fibers for optogenetic neural stimulation. Control software for integrated optical and electrical neural interfaces.</p>
+    <p><strong>Technologies:</strong> Python, Materials Engineering, Embedded Systems</p>
+  </div>
+</div>
+
+<p><a href="/ml-work.html" class="btn btn-secondary">View all ML work and reports</a></p>
 </div>
 
 <div class="widget">

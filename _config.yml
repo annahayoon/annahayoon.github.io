@@ -8,7 +8,7 @@ url: ""
 # Social media links
 github_username:  hayun-yoon
 linkedin_username: ha-yun-anna-yoon-509030118
-profile_pic: /assets/images/profile.jpg # Add your profile picture here
+profile_pic: /assets/images/profile.jpg
 
 # Build settings
 theme: null # We are using our own CSS now

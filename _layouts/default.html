@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            {% if site.profile_pic %}
+            <img src="{{ site.profile_pic | relative_url }}" alt="Profile Picture" class="profile-pic">
+            {% else %}
+            <div class="profile-pic-placeholder"></div>
+            {% endif %}
+            <h1>{{ site.title }}</h1>
+            <p>{{ site.description }}</p>
+            <nav>
+                <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+                <a href="{{ '/bio.html' | relative_url }}" {% if page.url == "/bio.html" %}class="active"{% endif %}>Bio</a>
+                <a href="{{ '/research.html' | relative_url }}" {% if page.url == "/research.html" %}class="active"{% endif %}>Research</a>
+                <a href="{{ '/publications.html' | relative_url }}" {% if page.url == "/publications.html" %}class="active"{% endif %}>Publications</a>
+                <a href="{{ '/teaching.html' | relative_url }}" {% if page.url == "/teaching.html" %}class="active"{% endif %}>Teaching & Mentoring</a>
+                <a href="{{ '/for_fun.html' | relative_url }}" {% if page.url == "/for_fun.html" %}class="active"{% endif %}>For Fun</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+        </main>
+    </div>
+    <footer>
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+        {% if site.email %}
+        <p>You can reach me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+        {% endif %}
+    </footer>
+</body>
+</html>

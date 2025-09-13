@@ -24,3 +24,13 @@ title: Teaching & Mentoring
 - **Kavish Loomba**, Undergraduate Researcher, *UC Berkeley* (2024)
 - **Trinav Chaudhuri**, Undergraduate Researcher, *UC Berkeley* (2023 - )
 - **Erin Kim**, High School Researcher, *UC Berkeley* (2023)
+
+## Teaching Materials
+
+- Syllabi, slides, and assignments available upon request. If you'd like select materials published here, I can add them.
+- ML-related handouts and reports are collected on the [ML Work](/ml-work.html) page.
+
+## Selected Student Projects (highlights)
+
+- Neural imaging analysis mini-pipeline using PyTorch (signal denoising + simple decoder)
+- OCT flow quantification benchmarking in Python/MATLAB

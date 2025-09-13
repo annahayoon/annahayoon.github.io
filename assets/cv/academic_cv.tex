@@ -1,0 +1,66 @@
+%!TEX encoding = UTF-8 Unicode
+% LaTeX Template for CV/Resume
+% 
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper, draft]{academic-cv}
+
+% Configure page margins with geometry
+\geometry{left=0.75in, top=0.75in, right=0.75in, bottom=0.75in, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Ha Yun Anna Yoon}{}
+%\position{University of California, Berkeley \\PhD Student in Mechanical Engineering}
+\extrainfo{404-567-3305 $\vert$\ \href{mailto:anna\_yoon@berkeley.edu}{anna\_yoon@berkeley.edu}}
+%\homepage{www.mywebsite.com}
+%\github{mygithub}
+%\linkedin{https://www.linkedin.com/in/ha-yun-anna-yoon-509030118}
+%\extrainfo{https://orcid.org/0000-0003-3288-8342}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%   Comment out any sections that are not appropriate for your CV
+%-------------------------------------------------------------------------------
+\input{cv/interest}
+\input{cv/education.tex}
+\input{cv/publications.tex}
+\input{cv/Textbook}
+\input{cv/presentation.tex}
+\input{cv/industry_experience}
+\input{cv/research.tex}
+\input{cv/teaching.tex}
+\input{cv/honors.tex}
+\input{cv/extracurricular.tex}
+\input{cv/Mentoring.tex}
+\input{cv/reference.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}

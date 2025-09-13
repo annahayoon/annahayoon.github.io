@@ -16,6 +16,7 @@ title: Home
       <a href="/honors.html" class="btn btn-secondary">Honors</a>
       <a href="/service.html" class="btn btn-secondary">Service</a>
       <a href="/industry.html" class="btn btn-secondary">Industry</a>
+      <a href="/projects.html" class="btn btn-secondary">Projects</a>
     </div>
     <p class="hero-contact"><a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a> • <a href="https://www.linkedin.com/in/ha-yun-anna-yoon" target="_blank">LinkedIn</a> • <a href="https://github.com/hayun-yoon" target="_blank">GitHub</a></p>
   </div>
@@ -34,3 +35,7 @@ My research focuses on developing cutting-edge ML models for high-speed neural i
 - Deep Learning for Biomedical Imaging (CNNs, Diffusion)
 - Multimodal Decoding (Calcium + Voltage)
 - High-Throughput Imaging Pipelines (kHz systems)
+
+## Download CV
+
+CV (PDF) — Coming soon. I’ll add a download link here.

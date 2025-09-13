@@ -13,6 +13,45 @@
     <meta property="og:url" content="https://annahayoon.github.io/bio.html">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .toc h2 {
+            margin-top: 0;
+            color: #495057;
+            font-size: 1.2em;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 8px 0;
+        }
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        h2 {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        h2:first-of-type {
+            border-top: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -35,11 +74,20 @@
         <main id="main-content" class="main-content" tabindex="-1">
             <h1>About</h1>
             
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#technical-skills">Technical Skills</a></li>
+                    <li><a href="#research-philosophy">Research Philosophy</a></li>
+                </ul>
+            </div>
+            
             <div class="bio-intro">
               <p class="lead">I am a PhD candidate in Mechanical Engineering at UC Berkeley with a minor in Machine Learning, specializing in developing deep learning models for high-speed volumetric neural imaging. My research bridges computational neuroscience, computer vision, and biomedical engineering to advance our understanding of neural circuits and brain function.</p>
             </div>
 
-            <h2>Education</h2>
+            <h2 id="education">Education</h2>
 
             <div class="education-item">
               <h3>University of California, Berkeley</h3>
@@ -59,7 +107,7 @@
               </ul>
             </div>
 
-            <h2>Technical Skills</h2>
+            <h2 id="technical-skills">Technical Skills</h2>
 
             <div class="skills-grid">
               <div class="skill-category">
@@ -78,7 +126,7 @@
               </div>
             </div>
 
-            <h2>Research Philosophy</h2>
+            <h2 id="research-philosophy">Research Philosophy</h2>
 
             <p>My approach to research combines rigorous technical development with practical applications. I believe in the power of interdisciplinary collaboration and am passionate about translating complex technical concepts into solutions that advance our understanding of the brain and improve human health.</p>
         </main>

@@ -38,4 +38,6 @@ My research focuses on developing cutting-edge ML models for high-speed neural i
 
 ## Download CV
 
-CV (PDF) — Coming soon. I’ll add a download link here.
+- Download: [Research CV (PDF)](/assets/Anna_Yoon_CV.pdf)
+  
+If the link 404s, place your exported PDF at `website/assets/Anna_Yoon_CV.pdf` and I’ll publish it.

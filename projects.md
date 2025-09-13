@@ -3,13 +3,29 @@ layout: default
 title: Projects Gallery
 ---
 
-## Projects Gallery (Coming Soon)
+## Selected Projects
 
-This page will showcase selected machine learning and research projects with short summaries, visuals, and links to code or papers.
-
-- Placeholder: Optical Sectioning via Diffusion Models (Widefield → 2P)
-- Placeholder: MARL for Heterogeneous Memory (CS285)
-- Placeholder: CNN Pupil Tracker (CS289A)
-- Placeholder: High-Speed Neural Imaging System (kHz pipeline)
+<div class="projects-grid">
+  <div class="project-card">
+    <img src="/assets/images/profile.jpg" alt="Optical Sectioning" class="project-thumb" />
+    <h3>Optical Sectioning via Diffusion Models</h3>
+    <p>Widefield → 2P reconstruction using DDPM/DDIM with Poisson-aware guidance; CNN baselines (U-Net, VGG) for comparison.</p>
+  </div>
+  <div class="project-card">
+    <img src="/assets/images/profile.jpg" alt="MARL" class="project-thumb" />
+    <h3>MARL for Heterogeneous Memory (CS285)</h3>
+    <p>Formulated tiered memory placement as a sequential decision process; policy-gradient agents vs. heuristic baselines.</p>
+  </div>
+  <div class="project-card">
+    <img src="/assets/images/profile.jpg" alt="Pupil Tracker" class="project-thumb" />
+    <h3>CNN Pupil Tracker (CS289A)</h3>
+    <p>Segmentation and centroid tracking for mouse behavioral videos with temporal smoothing for stability.</p>
+  </div>
+  <div class="project-card">
+    <img src="/assets/images/profile.jpg" alt="High-Speed Imaging" class="project-thumb" />
+    <h3>High-Speed Neural Imaging System</h3>
+    <p>kHz pipeline processing 10,000+ fps and improving temporal resolution by ~50% for multimodal decoding.</p>
+  </div>
+</div>
 
 

@@ -37,6 +37,7 @@ layout: default
                     <li><a href="{{ '/publications.html' | relative_url }}" {% if page.url == "/publications.html" %}class="active"{% endif %}>Publications</a></li>
                     <li><a href="{{ '/teaching.html' | relative_url }}" {% if page.url == "/teaching.html" %}class="active"{% endif %}>Teaching & Mentoring</a></li>
                     <li><a href="{{ '/ml-work.html' | relative_url }}" {% if page.url == "/ml-work.html" %}class="active"{% endif %}>ML Work</a></li>
+                    <li><a href="{{ '/news.html' | relative_url }}" {% if page.url == "/news.html" %}class="active"{% endif %}>News</a></li>
                     <li><a href="{{ '/for_fun.html' | relative_url }}" {% if page.url == "/for_fun.html" %}class="active"{% endif %}>For Fun</a></li>
                 </ul>
             </nav>
@@ -54,6 +55,7 @@ layout: default
         {% if site.email %}
         <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         {% endif %}
+        <p class="fact-note">All News items are fact-checked; sources are linked where applicable.</p>
     </footer>
 </body>
 </html>

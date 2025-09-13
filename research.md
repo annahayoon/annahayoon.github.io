@@ -9,10 +9,10 @@ Biomedical Optics, Population Imaging (Calcium + Voltage), Systems Neuroscience,
 
 ## Research Experience
 
-### PhD Researcher / Product Lead
+### PhD Researcher
 *UC Berkeley, Ji Lab | Berkeley, CA | 2020 - Present*
-- Identified critical limitations in existing neuronal imaging analysis; initiated and led a multi-year research project to deliver a novel deep learning solution.
-- Defined project roadmap and technical requirements for a new imaging and analysis platform, resulting in a system that improved temporal resolution by 50% for neuroscientist end-users.
+- Identified limitations in existing neuronal imaging analysis; led a multi-year project to develop a deep learning approach.
+- Defined technical requirements for an imaging and analysis pipeline; implemented changes that improved temporal resolution in internal evaluations.
 
 ### Research Fellow
 *Harvard Medical School, Wellman Center of Photomedicine | Boston, MA | 2019 - 2020*
@@ -29,9 +29,9 @@ Biomedical Optics, Population Imaging (Calcium + Voltage), Systems Neuroscience,
 <br>
 *Technologies: Python, PyTorch, CUDA, OpenCV*
 - Built real-time computer vision pipeline processing 10,000+ frames/sec of neural calcium imaging data
-- Developed custom CNN architectures for simultaneous voltage and calcium signal detection with 95%+ accuracy
-- Implemented GPU-accelerated image processing algorithms, achieving 50% improvement in temporal resolution
-- Created end-to-end ML pipeline from data acquisition to neural activity decoding for behavioral analysis
+- Developed CNN architectures for simultaneous voltage and calcium signal detection
+- Implemented GPU-accelerated image processing algorithms
+- Created an ML pipeline from data acquisition to neural activity decoding for behavioral analysis
 
 ### Medical OCT Flow Analysis System
 *Harvard Medical School | 2017 - 2020*

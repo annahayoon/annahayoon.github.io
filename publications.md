@@ -25,9 +25,27 @@ title: Publications
 
 ## Links
 
-- COSYNE 2025 abstract: [PDF if available](/assets/ml-work/Diffusion.pdf)
+- COSYNE 2025 abstract: [PDF if available]
 - SfN 2023 poster: [/assets/neuro/SfN_Poster.pdf](/assets/neuro/SfN_Poster.pdf)
 - ECoG work: [/assets/neuro/109000_0_art_file_1111222_t24w55_convrt.pdf](/assets/neuro/109000_0_art_file_1111222_t24w55_convrt.pdf)
 - ICADCS conference: [icadcs.vikrantuniversity.ac.in](https://icadcs.vikrantuniversity.ac.in/)
 
 For full bibliography, see the [Academic CV](/cv.html).
+
+---
+
+## All Publications (from CV)
+
+### Under Review
+- Liang, J.F., Lee, K., Tchoe, Y., **Yoon, H.A.**, Garrett, J., Dahye, S., Halgren, E., Ji, N. Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain. (Under Review: Nature Communications)
+
+### Manuscripts in Preparation
+- **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity.
+- Yu, P., **Yoon, H.A.**, Xu, D., Yang, Y., Gozel, O., Ji, N., Doiron, B. Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.
+- **Yoon, H.A.**, Hong, J. Microscopy denoising diffusion with poisson-aware physical guidance.
+
+### Work Completed
+- Simulate, design and develop two-photon integrated free-space angular chirp enhanced delay (FACED) microscope v3.0.
+
+### Work in Progress
+- **Yoon, H.A.**, Hong, J. Multichannel Conditional Denoising Diffusion Models for Neuropil Decontamination.

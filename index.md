@@ -34,6 +34,17 @@ title: Home
 </div>
 
 <div class="widget">
+<h2 class="widget-title">Recent Awards & Recognition</h2>
+<ul>
+<li>2024-2025 — Graduate Diversity and Community Fellowship ($7,500), UC Berkeley</li>
+<li>2024 — Korean Honor Scholarship ($3,000), Korean Embassy in the U.S.A.</li>
+<li>2024 — IEEE Photonics Society "Most Improved Chapter Award"</li>
+<li>2023 — H2H8 Fellowship ($10,000), UC Berkeley</li>
+</ul>
+<p><a href="/news.html" class="btn btn-secondary">View all awards and talks</a></p>
+</div>
+
+<div class="widget">
 <h2 class="widget-title">Current Research</h2>
 
 <p>I develop methods that make imaging data more informative, not just bigger. Current focus areas:</p>

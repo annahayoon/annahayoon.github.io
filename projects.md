@@ -24,7 +24,7 @@ title: Projects Gallery
   <div class="project-card">
     <img src="/assets/images/profile.jpg" alt="High-Speed Imaging" class="project-thumb" />
     <h3>High-Speed Neural Imaging System</h3>
-    <p>kHz pipeline processing 10,000+ fps and improving temporal resolution by ~50% for multimodal decoding.</p>
+    <p>GPU-accelerated pipeline for high-frame-rate neural imaging; evaluated temporal resolution changes in internal tests.</p>
   </div>
 </div>
 

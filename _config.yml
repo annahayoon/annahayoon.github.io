@@ -3,12 +3,12 @@ description: >-
   Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.
 email: anna_yoon@berkeley.edu
 baseurl: ""
-url: "https://annahayoon.github.io"
+url: ""
 
 # Social media links
 github_username:  hayun-yoon
-linkedin_username: ha-yun-anna-yoon
-profile_pic: /assets/images/profile.jpg # Add your profile picture here
+linkedin_username: ha-yun-anna-yoon-509030118
+profile_pic: /assets/images/profile.jpg
 
 # Build settings
 theme: null # We are using our own CSS now

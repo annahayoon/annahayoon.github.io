@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Bio
 ---
 
 <div class="bio-intro">
@@ -32,12 +32,12 @@ title: About
 <div class="skills-grid">
   <div class="skill-category">
     <h4>Programming & Data Science</h4>
-    <p>Python (PyTorch, NumPy, Pandas), SQL, MATLAB, R, Computer Vision, Data Analysis, Statistical Modeling</p>
+    <p>Python (PyTorch, TensorFlow, NumPy, Pandas, SciPy), SQL, MATLAB, R; Computer Vision, Diffusion Models, Deep Learning (CNNs, Transformers), Time Series, Statistical Modeling</p>
   </div>
   
   <div class="skill-category">
     <h4>Software & Tools</h4>
-    <p>Linux, Git, SolidWorks, Autodesk Inventor, ImageJ, Zemax</p>
+    <p>Linux, Git, Docker, CUDA, AWS (EC2, S3), HPC; ImageJ, Zemax, SolidWorks, Autodesk Inventor</p>
   </div>
   
   <div class="skill-category">

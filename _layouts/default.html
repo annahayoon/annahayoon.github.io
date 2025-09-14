@@ -16,6 +16,16 @@ layout: default
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NFTYRVVXM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1NFTYRVVXM');
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -31,25 +41,26 @@ layout: default
             <nav aria-label="Primary">
                 <ul class="nav-list">
                     <li><a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+                    <li><a href="{{ '/cv.html' | relative_url }}" {% if page.url == "/cv.html" %}class="active"{% endif %}>CV</a></li>
                     <li><a href="{{ '/bio.html' | relative_url }}" {% if page.url == "/bio.html" %}class="active"{% endif %}>Bio</a></li>
                     <li><a href="{{ '/research.html' | relative_url }}" {% if page.url == "/research.html" %}class="active"{% endif %}>Research</a></li>
                     <li><a href="{{ '/publications.html' | relative_url }}" {% if page.url == "/publications.html" %}class="active"{% endif %}>Publications</a></li>
                     <li><a href="{{ '/teaching.html' | relative_url }}" {% if page.url == "/teaching.html" %}class="active"{% endif %}>Teaching & Mentoring</a></li>
+                    <li><a href="{{ '/ml-work.html' | relative_url }}" {% if page.url == "/ml-work.html" %}class="active"{% endif %}>ML (for fun)</a></li>
+                    <li><a href="{{ '/news.html' | relative_url }}" {% if page.url == "/news.html" %}class="active"{% endif %}>News</a></li>
                     <li><a href="{{ '/for_fun.html' | relative_url }}" {% if page.url == "/for_fun.html" %}class="active"{% endif %}>For Fun</a></li>
                 </ul>
             </nav>
         </aside>
         <main id="main-content" class="main-content" tabindex="-1">
+            {% unless page.title == "Home" %}
             <h1>{{ page.title }}</h1>
+            {% endunless %}
             {{ content }}
         </main>
     </div>
     <footer>
-        <a rel="me" href="https://github.com/{{ site.github_username }}">GitHub</a>
-        <a rel="me" href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
-        {% if site.email %}
-        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }} · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        {% endif %}
+        <p>&copy; 2025 Ha Yun Anna Yoon</p>
     </footer>
 </body>
 </html>

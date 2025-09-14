@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ML (for fun) | Ha Yun Anna Yoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.">
+    <link rel="canonical" href="https://annahayoon.github.io/ml-work.html">
+    <meta property="og:title" content="ML (for fun) | Ha Yun Anna Yoon">
+    <meta property="og:description" content="Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annahayoon.github.io/ml-work.html">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+        .toc {
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .toc li {
+            margin: 0;
+        }
+        .toc li:not(:last-child)::after {
+            content: " |";
+            margin-left: 10px;
+        }
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        h3 {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+        }
+        h3:first-of-type {
+            border-top: none;
+            margin-top: 20px;
+        }
+        .project-meta {
+            font-size: 0.85em;
+            color: #666;
+            margin: 5px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="wrapper">
+        <main id="main-content" class="main-content" tabindex="-1">
+            <div class="page-header">
+                <h1><a href="preview.html">Ha Yun Anna Yoon</a></h1>
+                <nav class="inline-nav" aria-label="Primary">
+                    <a href="bio.html">Bio</a>
+                    <span class="nav-separator">•</span>
+                    <a href="research-publications.html">Research</a>
+                    <span class="nav-separator">•</span>
+                    <a href="teaching.html">Teaching</a>
+                    <span class="nav-separator">•</span>
+                    <a href="ml-work.html" class="active">ML (for fun)</a>
+                    <span class="nav-separator">•</span>
+                    <a href="awards-recognition.html">Awards</a>
+                </nav>
+            </div>
+            
+            <div class="toc">
+                <ul>
+                    <li><a href="#diffusion-models">Diffusion Models & Generative AI</a></li>
+                    <li><a href="#computer-vision">Computer Vision & Image Processing</a></li>
+                    <li><a href="#reinforcement-learning">Deep RL</a></li>
+                    <li><a href="#energy-modeling">ML Tools for Energy Systems</a></li>
+                </ul>
+            </div>
+            
+
+            <h3 id="diffusion-models">Diffusion Models & Generative AI</h3>
+            <h4>Microscopy Denoising Diffusion with Poisson-Aware Physical Guidance</h4>
+            <p class="project-meta"><em>Work in Progress</em></p>
+            <p>This work aims to computationally overcome the inherent trade-offs between different fluorescence microscopy techniques. Widefield (WF) microscopy offers a large field-of-view and high frame rates but suffers from significant image degradation due to out-of-focus light contamination. Conversely, 2-photon (2P) microscopy provides excellent optical sectioning, deeper tissue penetration, and reduced scattering by selectively exciting a diffraction-limited focal volume, but at the cost of speed and field-of-view. This project initially explored using standard CNNs (like U-Net and VGG16) to transform blurry WF images into sharp, 2P-quality images. However, the methodology evolved to address the fundamental noise properties of microscopy more directly. The final implementation uses a more advanced Denoising Diffusion Probabilistic Model (DDPM), which was enhanced with a novel, physically-motivated <strong>Poisson-Kullback-Leibler (PKL) guidance</strong> mechanism. This corrects the erroneous assumption of Gaussian noise made by standard models and instead enforces data consistency based on the physically accurate Poisson distribution of photon arrivals. The impact of this more sophisticated approach is a <strong>state-of-the-art image restoration pipeline that is more robust and has a lower tendency to hallucinate artifacts</strong>, enabling higher-fidelity biological imaging from faster, more accessible WF systems.</p>
+
+            <h3 id="computer-vision">Computer Vision & Image Processing</h3>
+            <h4>The Pupil Tracker: Fast and Efficient Pupil Segmentation and Tracking <a href="assets/ml-work/CS289A_project.pdf" target="_blank" style="font-size: 0.8em; color: #007bff;">[pdf]</a></h4>
+            <p class="project-meta"><em>Spring 2022 - CS289 Final Project</em></p>
+            <p>To address a significant data processing bottleneck in neuroscience, this project developed a computationally efficient alternative to resource-intensive deep learning models for tracking pupil dynamics for behavioral study. Pupil size and gaze direction are critical, non-invasive proxies for an animal's cognitive state—including arousal, attention, and decision-making—making accurate, high-throughput tracking essential for correlating neural activity with behavior. Existing CNN-based methods like DeepLabCut require days of training and specialized GPUs, creating significant delays in post-processing analysis. This work implemented a "Pupil Tracker" using a classical K-nearest neighbor (KNN) algorithm on binarized image data. KNN was selected for computational efficiency in neuroscience research environments with limited computing resources. Benchmarking against Detectron2 and DeepLabCut revealed massive training overhead (10 days CPU for DeepLabCut, 4 days on 8 V100 GPUs for Detectron2), specialized hardware requirements, and labor-intensive data labeling. KNN's "training-free" implementation, simplicity on binarized data, and CPU-centric performance prioritized speed and accessibility over marginal accuracy gains. The impact was a dramatic increase in experimental throughput: the method <strong>eliminated the training phase entirely</strong> and achieved an inference time of <strong>0.075 seconds per frame</strong>, making it <strong>~20% faster than DeepLabCut</strong> and <strong>60 times faster than Detectron2</strong>, while running on a standard CPU. This efficiency allows researchers to process vastly more behavioral data, accelerating the pace of discovery in systems neuroscience.</p>
+
+            <h3 id="reinforcement-learning">Deep RL</h3>
+            <h4>MARL: Learned Memory Allocation in Heterogeneous Memory Systems <a href="assets/ml-work/CS285_project.pdf" target="_blank" style="font-size: 0.8em; color: #007bff;">[pdf]</a></h4>
+            <p class="project-meta"><em>Fall 2021 - CS285 Final Project</em></p>
+            <p>This project addressed the exascale computing challenge of the "memory wall," where the performance of memory-bound applications, such as deep learning inference, is throttled by the limited capacity of high-bandwidth DRAM. A novel reinforcement learning framework, MARL, was developed to automate data placement in a heterogeneous memory system composed of 16GB of DRAM and 128GB of slower, high-capacity Persistent Memory (PM). The implementation represented workloads as computational graphs for a Graph Neural Network (GNN) policy, which was trained via an Evolutionary Algorithm to navigate the immense action space ($2^{311}$ for ResNet-101) of possible memory allocations. Deployed on a commercial Intel server, MARL's impact was twofold: it achieved a <strong>1.2x inference speedup</strong> over Intel's own optimized Memory Mode and, by intelligently utilizing the entire memory pool, it increased server throughput by enabling <strong>85 parallel inference tasks</strong> compared to only 65 in Memory Mode and one in a DRAM-only configuration—a <strong>30% improvement</strong> over the industry baseline.</p>
+
+
+            <h3 id="energy-modeling">ML Tools for Energy Systems</h3>
+            <p class="project-meta"><em>Spring 2021 - ME249</em></p>
+            
+            <h4>Project 1: Genetic Algorithm for Heat Transfer Correlation</h4>
+            <p>To improve predictive accuracy for nucleate boiling heat transfer, this project sought to optimize the empirical constants within a <strong>five-parameter, dimensionless correlation based on the Rohsenow model</strong>. A <strong>genetic algorithm</strong> was implemented to perform a <strong>multi-variable search</strong> across a dataset encompassing varied gravity levels, pressures, and surface tensions. The algorithm successfully converged to a solution, demonstrating its efficacy in navigating a complex parameter space to establish a more robust and physically grounded heat transfer correlation.</p>
+            
+            <h4>Project 2: Neural Network Modeling of Spray Cooling and Gas Turbine Systems</h4>
+            <p>This project aimed to create a high-fidelity surrogate model of a hybrid solar/fossil-fuel gas turbine power system, where traditional fluid dynamics models would be computationally prohibitive. A <strong>sequential neural network with three hidden layers and the `elu` activation function</strong> was implemented in Keras. By systematically evaluating different network architectures, this data-driven approach provided a computationally efficient tool to predict system performance and revealed that <strong>solar heat input was a more dominant parameter than air inlet temperature</strong>.</p>
+            
+            <h4>Project 3: Performance Modeling of Solar PV Power Systems</h4>
+            <p>The objective was to develop a predictive framework for the non-linear behavior of multi-panel solar PV systems under varying electrical configurations (series, parallel, series-parallel). A key innovation was the use of <strong>two distinct neural networks</strong>: the first predicted the optimal configuration for a given condition, while the second, more accurate model predicted the power output for a specified configuration. The second model proved vastly superior for system control, achieving a <strong>35-fold improvement in accuracy</strong>, providing a highly reliable tool for performance prediction.</p>
+            
+            <h4>Project 4: Solar Thermal Power Plant Boiler and Electronics Cooling</h4>
+            <p>This work applied neural networks to two distinct thermal management problems: predicting steam exit quality in a solar thermal boiler and determining maximum surface temperatures in a passively cooled electronics system. For the boiler, a <strong>Keras model</strong> accurately predicted performance and was further developed into an <strong>inverse design tool that could calculate the required mass flow rate for a desired output</strong>. For electronics cooling, the resulting neural network served as the foundation for a <strong>design tool that generated a surface plot of safe operating conditions</strong>, effectively translating a predictive model into actionable engineering guidance.</p>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Ha Yun Anna Yoon</p>
+    </footer>
+</body>
+</html>

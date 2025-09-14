@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ML Work | Ha Yun Anna Yoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.">
+    <link rel="canonical" href="https://annahayoon.github.io/ml-work.html">
+    <meta property="og:title" content="ML Work | Ha Yun Anna Yoon">
+    <meta property="og:description" content="Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annahayoon.github.io/ml-work.html">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Ha Yun Anna Yoon</h1>
+            <p class="description">Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.</p>
+            <nav aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="preview.html">Ha Yun Anna Yoon</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="research-publications.html">Research & Publications</a></li>
+                    <li><a href="teaching.html">Teaching & Mentoring</a></li>
+                    <li><a href="ml-work.html" class="active">ML Work (for fun)</a></li>
+                    <li><a href="awards-recognition.html">Awards & Recognition</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="main-content" class="main-content" tabindex="-1">
+            <h1>Machine Learning Projects</h1>
+
+            <h3>Deep Reinforcement Learning</h3>
+            <h4>Learned Memory Allocation in Heterogeneous Memory Systems</h4>
+            <p><em>Fall 2021 - CS285 Final Project</em></p>
+            <p><strong>Situation:</strong> The growing "memory wall" problem where demand for memory capacity in applications like deep learning is outstripping the slow growth of traditional DRAM, creating a critical bottleneck in modern computing systems.</p>
+            <p><strong>Task:</strong> Create an intelligent system that could automatically and efficiently allocate memory objects between fast, expensive DRAM and slower, high-capacity Persistent Memory (PM) to maximize both performance and the number of tasks a server can handle.</p>
+            <p><strong>Action:</strong> Developed MARL (Memory Allocation Reinforcement Learning) framework using Graph Neural Networks to understand deep learning workload structures and Evolutionary Algorithms to explore allocation policies efficiently. Modified PyTorch at the C++ level (6,400+ lines of code) to intercept native memory allocation calls and replace them with MARL's decisions. Tested on real Intel AI Labs commercial server with 16GB DRAM and 128GB PM.</p>
+            <p><strong>Result:</strong> Achieved breakthrough performance: 85 parallel tasks (30% improvement over Intel's standard solution, 85x improvement over DRAM-only). Runtime of 1.6 arbitrary units (1.2x speedup vs Intel's optimized Memory Mode, nearly matching DRAM-only performance despite using slower PM). Demonstrated that intelligent RL-based allocation can solve massive optimization problems (2^311 possibilities for ResNet-101) while maintaining scientific rigor through real hardware validation.</p>
+
+            <h3>Computer Vision & Image Processing</h3>
+            <h4>The Pupil Tracker: Fast and Efficient Pupil Segmentation and Tracking</h4>
+            <p><em>Spring 2022 - CS289 Final Project</em></p>
+            <p><strong>Situation:</strong> Existing deep learning methods for pupil tracking in behavioral studies require extensive training time (4-10 days) and high computational costs, making them impractical for researchers who need immediate, reliable results for mouse behavioral analysis.</p>
+            <p><strong>Task:</strong> Create a simple, fast, and computationally inexpensive method for tracking mouse pupils in behavioral study videos that eliminates training overhead while maintaining accuracy.</p>
+            <p><strong>Action:</strong> Developed "Pupil Tracker" from scratch in MATLAB using K-nearest neighbor (KNN) algorithm. Implemented a streamlined process involving manual ROI selection, image binarization, and KNN-based pupil center/radius detection. Added elliptical masks to handle light reflections and whisker obstructions that commonly interfere with pupil detection.</p>
+            <p><strong>Result:</strong> Achieved revolutionary performance improvements: 0.075 sec/frame processing speed (60x faster than Detectron2's 4.5 sec/frame, 20% faster than DeepLabCut's 0.094 sec/frame). Complete elimination of training time (vs. 4 days GPU training for Detectron2, 10 days CPU for DeepLabCut). For a 27-minute video: 30 minutes vs. 30+ hours processing time. Demonstrated that simpler, targeted algorithms can be orders of magnitude more practical than state-of-the-art deep learning methods for specific use cases, enabling real-time behavioral analysis.</p>
+
+            <h3>Diffusion Models & Generative AI</h3>
+            
+            <h4>Microscopy Denoising Diffusion with Poisson-Aware Physical Guidance</h4>
+            <p><em>Work in Progress</em></p>
+            <p><strong>Situation:</strong> Standard denoising diffusion models assume Gaussian noise, which is a poor physical match for fluorescence microscopy where noise is signal-dependent and better described by a Poisson distribution, leading to artifacts and "hallucinated" details.</p>
+            <p><strong>Task:</strong> Improve denoising diffusion model performance for microscopy image restoration by addressing the statistical mismatch between assumed Gaussian noise and actual Poisson noise in photon-limited situations.</p>
+            <p><strong>Action:</strong> Proposed Poisson-Kullback-Leibler (PKL) guidance mechanism that replaces the standard L2 norm (Gaussian assumption) in the diffusion model's data consistency term with KL divergence, the physically appropriate metric for Poisson noise.</p>
+            <p><strong>Result:</strong> Achieved state-of-the-art performance on challenging microscopy image restoration tasks with superior robustness to imperfect microscope optics models and lower tendency to hallucinate artifacts, critical for reliable biological imaging. Code and data planned for public release upon publication.</p>
+            
+            <h4>Deep Learning Enables Optical Sectioning</h4>
+            <p><em>Work in Progress</em></p>
+            <p><strong>Situation:</strong> Achieving optical sectioning in widefield microscopy typically requires expensive and complex microscopy techniques like 2-photon imaging, limiting accessibility for many researchers.</p>
+            <p><strong>Task:</strong> Use deep learning to computationally transform standard, blurry widefield images into sharp, optically-sectioned images that match 2-photon quality.</p>
+            <p><strong>Action:</strong> Built Convolutional Neural Network to predict corresponding 2-photon reference images from widefield inputs. Created comprehensive data preprocessing pipeline: acquired paired widefield/2-photon images, aligned and cropped pairs, generated 300x300 pixel training patches, discarded poorly-aligned pieces. Final dataset: ~40,000 image pairs (80% training, 20% validation).</p>
+            <p><strong>Result:</strong> Successfully established methodology and training dataset. CNN architecture defined and comprehensive preprocessing pipeline completed. Project demonstrates potential for democratizing high-quality optical sectioning through computational approaches.</p>
+
+
+            <h3>ME249: Machine Learning Tools for Modeling Energy Transport and Conversion Processes</h3>
+            <p><em>Spring 2021</em></p>
+            
+            <h4>Project 1: Genetic Algorithm for Heat Transfer Correlation</h4>
+            <p><em>Spring 2021</em></p>
+            <p><strong>Situation:</strong> Traditional heat transfer correlations for nucleate boiling require manual parameter tuning and struggle with complex relationships across varying gravity levels, pressures, and surface tensions.</p>
+            <p><strong>Task:</strong> Use genetic algorithms to create models for nucleate boiling heat transfer by finding optimal constants for heat flux-wall superheat relationships.</p>
+            <p><strong>Action:</strong> Developed two models - one using raw experimental data and another using dimensionless form based on Rohsenow correlation. Applied genetic algorithms to analyze data across different gravity levels, pressures, and surface tensions, systematically exploring parameter space.</p>
+            <p><strong>Result:</strong> Achieved minimum error of less than 0.04, demonstrating highly effective predictive modeling. Key finding: algorithm efficiency was sensitive to initial guesses - poor initial guesses required twice the iterations to converge, highlighting the importance of domain knowledge for practical applications and the value of informed initialization in optimization.</p>
+            
+            <h4>Project 2: Neural Network Modeling of Spray Cooling and Gas Turbine Systems</h4>
+            <p><em>Spring 2021</em></p>
+            <p><strong>Situation:</strong> Complex thermal systems like spray cooling and hybrid solar/fossil-fuel gas turbines require sophisticated modeling approaches that can capture nonlinear relationships between multiple input parameters and system performance.</p>
+            <p><strong>Task:</strong> Create and assess neural network models for spray cooling systems and hybrid solar/fossil-fuel gas turbine power systems to predict system behavior accurately.</p>
+            <p><strong>Action:</strong> Built neural networks from scratch using first principles and backpropagation, then compared performance to Keras-based models. Developed sequential neural networks with three hidden layers for gas turbine modeling, exploring different architectures and activation functions (ELU vs tanh).</p>
+            <p><strong>Result:</strong> Achieved batch squared error <0.00035 and final loss of 0.0239 for spray cooling models. Gas turbine model achieved MAE of ~0.04 with ELU activation, outperforming tanh activation (MAE ~0.05). Demonstrated that increasing neurons didn't improve performance, showing nuanced understanding of model optimization beyond "bigger is better" and the importance of appropriate activation function selection.</p>
+            
+            <h4>Project 3: Performance Modeling of Solar PV Power Systems</h4>
+            <p><em>Spring 2021</em></p>
+            <p><strong>Situation:</strong> Solar panel system performance depends on complex interactions between multiple factors, and optimal configuration selection requires understanding how different arrangements (parallel, series, series/parallel) affect power output under varying conditions.</p>
+            <p><strong>Task:</strong> Use neural networks to model and predict performance of solar panel systems in different configurations to enable optimal system design.</p>
+            <p><strong>Action:</strong> Applied Principal Component Analysis to identify key factors (solar radiation, load resistance) affecting power output. Built neural networks to predict power output and optimal panel configurations (parallel, series, series/parallel combinations), implementing careful model selection and validation strategies.</p>
+            <p><strong>Result:</strong> Achieved excellent generalization with training MAE of 0.0019 and validation MAE of 0.002. Configuration prediction model had MAE of 0.063, while power output model achieved superior MAE of 0.0018 - a 35-fold improvement demonstrating sophisticated model selection for specific engineering tasks. Successfully diagnosed and prevented overfitting in complex models, showing mastery of practical machine learning engineering.</p>
+            
+            <h4>Project 4: Solar Thermal Power Plant Boiler and Electronics Cooling</h4>
+            <p><em>Spring 2021</em></p>
+            <p><strong>Situation:</strong> Solar thermal power plant boilers and electronics cooling systems require accurate temperature and quality predictions for safe operation, but traditional modeling approaches struggle with the complex relationships between design parameters and thermal performance.</p>
+            <p><strong>Task:</strong> Apply neural network modeling to solar thermal power plant boilers and electronics cooling systems to predict critical thermal parameters accurately.</p>
+            <p><strong>Action:</strong> Developed Keras neural networks to predict steam exit quality and boiler wall temperature from tube diameter, solar flux, and mass flow rate. Built separate models for electronics cooling to predict component temperatures from heat flux and component spacing. Experimented with different regularization techniques including dropout layers.</p>
+            <p><strong>Result:</strong> Achieved high accuracy with boiler MAE of 0.0124 and electronics cooling MAE of 0.0745. Demonstrated strong grasp of technique selection - dropout layers worsened boiler performance (MAE increased to 0.024), showing when not to apply certain techniques. Transformed predictive models into practical design tools through surface plots of safe operating conditions, bridging the gap between academic modeling and engineering practice.</p>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Ha Yun Anna Yoon</p>
+    </footer>
+</body>
+</html>

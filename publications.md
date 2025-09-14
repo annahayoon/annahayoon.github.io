@@ -37,7 +37,6 @@ For full bibliography, see the [Academic CV](/cv.html).
 ## All Publications (from CV)
 
 ### Under Review
-- Liang, J.F., Lee, K., Tchoe, Y., **Yoon, H.A.**, Garrett, J., Dahye, S., Halgren, E., Ji, N. Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain. (Under Review: Nature Communications)
 
 ### Manuscripts in Preparation
 - **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.

@@ -16,6 +16,16 @@ layout: default
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NFTYRVVXM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1NFTYRVVXM');
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>

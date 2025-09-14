@@ -36,7 +36,7 @@ layout: default
             {% else %}
             <div class="profile-pic-placeholder"></div>
             {% endif %}
-            <h1>{{ site.title }}</h1>
+            <h1>{% if page.url != "/" %}<a href="{{ '/' | relative_url }}">{{ site.title }}</a>{% else %}{{ site.title }}{% endif %}</h1>
             <p class="description">{{ site.description }}</p>
             <nav aria-label="Primary">
                 <ul class="nav-list">
@@ -46,7 +46,7 @@ layout: default
                     <li><a href="{{ '/research.html' | relative_url }}" {% if page.url == "/research.html" %}class="active"{% endif %}>Research</a></li>
                     <li><a href="{{ '/publications.html' | relative_url }}" {% if page.url == "/publications.html" %}class="active"{% endif %}>Publications</a></li>
                     <li><a href="{{ '/teaching.html' | relative_url }}" {% if page.url == "/teaching.html" %}class="active"{% endif %}>Teaching & Mentoring</a></li>
-                    <li><a href="{{ '/ml-work.html' | relative_url }}" {% if page.url == "/ml-work.html" %}class="active"{% endif %}>ML (for fun)</a></li>
+                    <li><a href="{{ '/ml-work.html' | relative_url }}" {% if page.url == "/ml-work.html" %}class="active"{% endif %}>ML projects</a></li>
                     <li><a href="{{ '/news.html' | relative_url }}" {% if page.url == "/news.html" %}class="active"{% endif %}>News</a></li>
                     <li><a href="{{ '/for_fun.html' | relative_url }}" {% if page.url == "/for_fun.html" %}class="active"{% endif %}>For Fun</a></li>
                 </ul>
@@ -59,8 +59,5 @@ layout: default
             {{ content }}
         </main>
     </div>
-    <footer>
-        <p>&copy; 2025 Ha Yun Anna Yoon</p>
-    </footer>
 </body>
 </html>

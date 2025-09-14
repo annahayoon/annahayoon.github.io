@@ -7,29 +7,32 @@ title: Home
   <div class="hero-content">
     <h1 class="hero-title">Ha Yun Anna Yoon</h1>
     <p class="hero-subtitle">PhD Candidate, UC Berkeley — Machine Learning for Neural Imaging</p>
-    <p class="hero-description">I build concise, reliable ML systems for high-speed neural imaging. My work bridges computer vision and systems neuroscience to turn noisy, multimodal data into actionable scientific insight.</p>
+    <p class="hero-description">I build concise, reliable ML systems for high-speed neural imaging. My work bridges systems neuroscience and biophotonics to turn noisy, multimodal data into actionable scientific insight.</p>
+
     <div class="hero-links">
-      <a href="/cv.html" class="btn btn-primary">Academic CV</a>
-      <a href="/bio.html" class="btn btn-secondary">About</a>
+      <a href="/bio.html" class="btn btn-secondary">Bio</a>
       <a href="/research.html" class="btn btn-secondary">Research</a>
       <a href="/publications.html" class="btn btn-secondary">Publications</a>
       <a href="/teaching.html" class="btn btn-secondary">Teaching</a>
       <a href="/ml-work.html" class="btn btn-secondary">ML Work</a>
     </div>
-    <p class="hero-contact"><a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a> • <a href="https://www.linkedin.com/in/ha-yun-anna-yoon" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://github.com/hayun-yoon" target="_blank" rel="noopener">GitHub</a></p>
+    <p class="hero-contact"><a href="/Yoon_Ha Yun Anna_Resume.pdf" target="_blank">CV</a> • <a href="https://github.com/annahayoon" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/ha-yun-anna-yoon" target="_blank" rel="noopener">LinkedIn</a> • Reach me at <a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a></p>
+
   </div>
 </div>
 
 <div class="widget">
 <h2 class="widget-title">News & Updates</h2>
+<p class="fact-note">All News items are fact-checked; sources are linked where applicable.</p>
 
 <ul>
 <li>2025 — COSYNE accepted: Nonsense-free behavioral correlation in mouse V1 (co-author).</li>
-<li>2024 — Graduate Diversity and Community Fellowship ($7,500), UC Berkeley</li>
-<li>2024 — Korean Honor Scholarship ($3,000), Korean Embassy in the U.S.A.</li>
 <li>2024 — COSYNE: Behavioral correlation integration in mouse V1 (co-author). <a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">Abstract</a></li>
+
 <li>2023 — SfN: Axial resolution vs. functional retrieval in 2p calcium imaging (presenting author). <a href="/assets/neuro/SfN_Poster.pdf">Poster</a></li>
+
 <li>Resource — ICADCS: 1st International Conference on AI, Data Science, Cyber Security and Smart Manufacturing for Sustainable Development. <a href="https://icadcs.vikrantuniversity.ac.in/" target="_blank" rel="noopener">Conference site</a></li>
+
 <li><a href="/news.html">See all news →</a></li>
 </ul>
 </div>
@@ -60,7 +63,7 @@ title: Home
 <div class="widget">
 <h2 class="widget-title">Research Interests</h2>
 
-<p>Biomedical Optics, Population Imaging (Calcium + Voltage), Systems Neuroscience, Machine Learning</p>
+<p>Biophotonics, System Neuroscience, Image Processing, Machine Learning</p>
 
 <p><a href="/research.html" class="btn btn-secondary">View detailed research experience</a></p>
 </div>
@@ -72,18 +75,21 @@ title: Home
   <div class="project-card">
     <h4>High-Speed Neural Imaging System</h4>
     <p>Real-time computer vision pipeline processing 10,000+ frames/sec of neural calcium imaging data. CNN architectures for simultaneous voltage and calcium signal detection.</p>
+
     <p><strong>Technologies:</strong> Python, PyTorch, CUDA, OpenCV</p>
   </div>
   
   <div class="project-card">
     <h4>Medical OCT Flow Analysis System</h4>
     <p>Portable optical coherence tomography system for coronary artery flow measurement. ML models for automated vessel analysis, reducing diagnostic time by 60%.</p>
+
     <p><strong>Technologies:</strong> Python, MATLAB, Signal Processing</p>
   </div>
   
   <div class="project-card">
     <h4>Flexible Neural Interface Technology</h4>
     <p>Designed and fabricated flexible all-polymer multimodal fibers for optogenetic neural stimulation. Control software for integrated optical and electrical neural interfaces.</p>
+
     <p><strong>Technologies:</strong> Python, Materials Engineering, Embedded Systems</p>
   </div>
 </div>
@@ -100,6 +106,7 @@ title: Home
   <ul>
     <li><strong>Minor:</strong> Machine Learning</li>
     <li><strong>Dissertation:</strong> Developing Deep Learning Models for Fusing Multimodal Neural Imaging Data (Voltage and Calcium) at High Speeds</li>
+
     <li><strong>Advisor:</strong> Dr. Na Ji</li>
   </ul>
 
@@ -110,6 +117,7 @@ title: Home
   <p class="degree">BS in Mechanical Engineering <span class="year">(2015-2019)</span></p>
   <ul>
     <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Linear Algebra, Statistics, Control Systems</li>
+
   </ul>
 </div>
 </div>
@@ -127,32 +135,25 @@ title: Home
 <ul class="publications-list">
   <li>
     <div class="publication-title">Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1.</div>
+
     <div class="publication-authors">Yu, P., <strong>Yoon, H.A.</strong>, et al.</div>
     <div class="publication-venue">COSYNE 2025</div>
   </li>
   <li>
     <div class="publication-title">Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.</div>
+
     <div class="publication-authors">Yu, P., <strong>Yoon, H.A.</strong>, et al.</div>
     <div class="publication-venue"><a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">COSYNE 2024 Abstract (PDF)</a></div>
+
   </li>
   <li>
     <div class="publication-title">Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity.</div>
+
     <div class="publication-authors"><strong>Yoon, H.A.</strong>, Charles, A., Ji, N.</div>
     <div class="publication-venue"><a href="/assets/neuro/SfN_Poster.pdf">SfN 2023 Poster (PDF)</a></div>
   </li>
 </ul>
 <p><a href="/publications.html" class="btn btn-secondary">View all publications</a></p>
-</div>
-
-<div class="widget">
-<h2 class="widget-title">Leadership & Service</h2>
-<ul>
-  <li><strong>SPIE, Optica, IEEE Photonics Society</strong>, UC Berkeley Chapter President (2023-24)</li>
-  <li><strong>UC Berkeley KSEA Mentor</strong>, Graduate Mentor (2023)</li>
-  <li><strong>UC Berkeley Society of Women Engineers</strong>, Graduate Mentor (2023)</li>
-  <li><strong>MIT Educational Council</strong>, Interviewer (2020-)</li>
-  <li><strong>MIT MechE Student Advisory Committee</strong>, Committee Member (2017-2019)</li>
-</ul>
 </div>
 
 <div class="widget">

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Bio
 ---
 
 <div class="bio-intro">

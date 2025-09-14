@@ -22,7 +22,7 @@ title: News
 ## Recent Talks & Presentations
 
 - Fall 2023 — *Simultaneous Calcium and Voltage Imaging in mouse V1*. Invited talk: Samsung x Stanford KSAS x UC Berkeley KGSA Academic Conference, San Jose, CA
-- 2023 — SfN Poster: Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity (presenting author)
+- 2023 — SfN Poster: Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity (presenting author)
 - 2024 — COSYNE: Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1 (co-author)
 - 2025 — COSYNE: Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1 (co-author)
 

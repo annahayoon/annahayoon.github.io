@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Research & Publications | Ha Yun Anna Yoon</title>
+    <title>Research | Ha Yun Anna Yoon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.">
     <link rel="canonical" href="https://annahayoon.github.io/research-publications.html">
-    <meta property="og:title" content="Research & Publications | Ha Yun Anna Yoon">
+    <meta property="og:title" content="Research | Ha Yun Anna Yoon">
     <meta property="og:description" content="Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://annahayoon.github.io/research-publications.html">
@@ -15,23 +15,24 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <style>
         .toc {
-            background-color: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .toc h2 {
-            margin-top: 0;
-            color: #495057;
-            font-size: 1.2em;
+            margin: 15px 0;
+            font-size: 0.85em;
         }
         .toc ul {
             list-style: none;
             padding-left: 0;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
         }
         .toc li {
-            margin: 8px 0;
+            margin: 0;
+            white-space: nowrap;
+        }
+        .toc li:not(:last-child)::after {
+            content: " |";
+            margin-left: 8px;
         }
         .toc a {
             color: #007bff;
@@ -51,170 +52,119 @@
             border-top: none;
             margin-top: 20px;
         }
+        .publication-title {
+            white-space: nowrap;
+            overflow: visible;
+            max-width: 100%;
+            font-weight: bold;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
     </style>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="wrapper">
-        <aside class="sidebar">
-            <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Ha Yun Anna Yoon</h1>
-            <p class="description">Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.</p>
-            <nav aria-label="Primary">
-                <ul class="nav-list">
-                    <li><a href="preview.html">Home</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="research-publications.html" class="active">Research & Publications</a></li>
-                    <li><a href="teaching.html">Teaching & Mentoring</a></li>
-                    <li><a href="ml-work.html">ML Work (for fun)</a></li>
-                    <li><a href="awards-recognition.html">Awards & Recognition</a></li>
-                </ul>
-            </nav>
-        </aside>
         <main id="main-content" class="main-content" tabindex="-1">
-            <h1>Research & Publications</h1>
+            <div class="page-header">
+                <h1><a href="preview.html">Ha Yun Anna Yoon</a></h1>
+                <nav class="inline-nav" aria-label="Primary">
+                    <a href="bio.html">Bio</a>
+                    <span class="nav-separator">•</span>
+                    <a href="research-publications.html" class="active">Research</a>
+                    <span class="nav-separator">•</span>
+                    <a href="teaching.html">Teaching</a>
+                    <span class="nav-separator">•</span>
+                    <a href="ml-work.html">ML Work</a>
+                    <span class="nav-separator">•</span>
+                    <a href="awards-recognition.html">Awards</a>
+                </nav>
+            </div>
             
             <div class="toc">
-                <h2>Table of Contents</h2>
                 <ul>
-                    <li><a href="#research-interests">Research Interests</a></li>
-                    <li><a href="#research-experience">Research Experience</a></li>
-                    <li><a href="#current-projects">Current Projects</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#talks">Talks & Presentations</a></li>
-                    <li><a href="#resources">Additional Resources</a></li>
+                    <li><a href="#conference">Conferences</a></li>
+                    <li><a href="#textbook">Textbook</a></li>
+                    <li><a href="#talks">Talks</a></li>
+                    <li><a href="#faced-microscope">FACED v3.0</a></li>
+                    <li><a href="#thesis">Thesis</a></li>
                 </ul>
             </div>
             
-            <h2 id="research-interests">Research Interests</h2>
-            <p>Biomedical Optics, Population Imaging (Calcium + Voltage), Systems Neuroscience, Machine Learning</p>
-
-            <h2 id="research-experience">Research Experience</h2>
-
-            <h3>PhD Researcher</h3>
-            <p><em>UC Berkeley, Ji Lab | Berkeley, CA | 2020 - Present</em></p>
-            <ul>
-                <li>Identified limitations in existing neuronal imaging analysis; led a multi-year project to develop a deep learning approach.</li>
-                <li>Defined technical requirements for an imaging and analysis pipeline; implemented changes that improved temporal resolution in internal evaluations.</li>
-            </ul>
-
-            <h3>Research Fellow</h3>
-            <p><em>Harvard Medical School, Wellman Center of Photomedicine | Boston, MA | 2019 - 2020</em></p>
-            <ul>
-                <li>Spearheaded the development of a portable and low-cost optical coherence tomography (OCT) system, defining user needs and system specifications to make advanced medical imaging more accessible.</li>
-            </ul>
-
-            <h3>Undergraduate Researcher</h3>
-            <p><em>MIT, Anikeeva Lab | Cambridge, MA | 2015 - 2017</em></p>
-            <ul>
-                <li>Contributed to the development of flexible polymer fibers for optogenetics, a project aimed at creating new tools to enable novel neuroscience research.</li>
-            </ul>
-
-            <h2 id="current-projects">Current Projects</h2>
-
-            <h3>High-Speed Neural Imaging System</h3>
-            <p><em>UC Berkeley | 2020 - Present</em><br>
-            <em>Technologies: Python, PyTorch, CUDA, OpenCV</em></p>
-            <ul>
-                <li>Built real-time computer vision pipeline processing 10,000+ frames/sec of neural calcium imaging data</li>
-                <li>Developed CNN architectures for simultaneous voltage and calcium signal detection</li>
-                <li>Implemented GPU-accelerated image processing algorithms</li>
-                <li>Created an ML pipeline from data acquisition to neural activity decoding for behavioral analysis</li>
-            </ul>
-
-            <h3>Medical OCT Flow Analysis System</h3>
-            <p><em>Harvard Medical School | 2017 - 2020</em><br>
-            <em>Technologies: Python, MATLAB, Signal Processing</em></p>
-            <ul>
-                <li>Developed portable optical coherence tomography (OCT) system for coronary artery flow measurement</li>
-                <li>Implemented advanced signal processing algorithms for real-time blood flow quantification</li>
-                <li>Created machine learning models for automated vessel analysis, reducing diagnostic time by 60%</li>
-                <li>Built user-friendly interface for clinical deployment in cardiac catheterization labs</li>
-            </ul>
-
-            <h3>Flexible Neural Interface Technology</h3>
-            <p><em>MIT | 2015 - 2017</em><br>
-            <em>Technologies: Python, Materials Engineering, Embedded Systems</em></p>
-            <ul>
-                <li>Designed and fabricated flexible all-polymer multimodal fibers for optogenetic neural stimulation</li>
-                <li>Developed control software for integrated optical and electrical neural interfaces</li>
-                <li>Created automated testing protocols and data analysis pipelines for biocompatibility validation</li>
-                <li>Collaborated with cross-functional team to translate research into potential clinical applications</li>
-            </ul>
-
-            <hr>
-
             <h2 id="publications">Publications</h2>
 
-            <h3>Conference Publications</h3>
+            <p><span class="publication-title">[0] Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain.</span> Liang, J.F., Lee, K., Tchoe, Y., Ganji, M., Vatsyayan, R., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. <em>[Under Review]</em></p>
             
-            <h4>2025</h4>
+            <p><span class="publication-title">[1] Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.</span><br>
+            <strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. <em>[In submission]</em></p>
+            
+            <p><span class="publication-title">[2] Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.</span><br>
+            Yu, P., <strong>Yoon, H.A.</strong>, Xu, D., Yang, Y., Gozel, O., Ji, N., Doiron, B. <em>[In preparation]</em></p>
+            
+            <p><span class="publication-title">[3] Microscopy denoising diffusion with poisson-aware physical guidance.</span><br>
+            <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
+            
+            <p><span class="publication-title">[4] Multichannel Conditional Denoising Diffusion Models for Neuropil Decontamination.</span><br>
+            <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
+
+            <h2 id="conference">Conferences</h2>
+            
+            <p><strong>[0] Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1.</strong><br>
+            COSYNE 2025<br>
+            Yu, P., <strong>Yoon, H.A.</strong>, Yang, Y., Xu, Y., Gozel, O., Ji, N., Doiron, B.</p>
+            
+            <p><span class="publication-title">[1] Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.</span><br>
+            COSYNE 2024 <a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">[PDF]</a><br>
+            Yu, P., <strong>Yoon, H.A.</strong>, Yang, Y., Gozel, O., Ji, N., Doiron, B.</p>
+            
+            <p><span class="publication-title">[2] Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.</span><br>
+            SfN 2023 <a href="/assets/neuro/SfN_Poster.pdf">[Poster]</a><br>
+            <strong>Yoon, H.A.</strong>, Charles, A., Ji, N.</p>
+            
+            <p><strong>[3] Quantifying blood flow using backscattering indicator-dilution in intravascular optical coherence tomography: in vitro validation.</strong><br>
+            Optics in Cardiology 2018<br>
+            Uribe-Patarroyo, N., <strong>Yoon, H.A.</strong>, Bouma, B.</p>
+            
+            <p><span class="publication-title">[4] Flexible all-polymer multimodal fiber for integrated optogenetics.</span><br>
+            SfN 2016<br>
+            <span style="white-space: nowrap;">Park, S., Guo, Y., Jia, X., Choe, H., Grena, B., Kang, J., <strong>Yoon, H.A.</strong>, Choi, G.B., Fink, Y., Anikeeva, P.</span></p>
+
+            <h2 id="textbook">Textbook</h2>
+            <p><span class="publication-title">[0] <a href="https://product.kyobobook.co.kr/detail/S000001870566">신재생 에너지 개정3판</a> (Renewable Energy, 3rd ed.)</span><br>
+            Infinity Books, 2019. <em>ISBN: 9791185578507</em><br>
+            Yoon, C.S., <strong>Yoon, H.A.</strong>, Yoon, J.S.</p>
+
+            <h2 id="talks">Talks</h2>
+            <p>[0] Fall 2023 — <em>Simultaneous Calcium and Voltage Imaging in mouse V1</em>. Invited talk: Samsung x Stanford KSAS x UC Berkeley KGSA Academic Conference, San Jose, CA</p>
+
+            <h2 id="faced-microscope">FACED v3.0 <span style="font-size: 0.7em; font-weight: normal;">Ji Lab</span></h2>
+            <p>Designed and developed a more stable and wide-range covering excitation wavelength 2P integrated free-space angular chirp enhanced delay (FACED) microscope v3.0 for high-speed volumetric neural imaging. This project was launched to overcome the inherent design limitations of the prior system: <strong>significant thermal and mechanical instability</strong> from its off-the-shelf parts, and a fixed 1035nm laser system that was incompatible with <strong>SOTA genetically encoded sensors</strong> optimized for other wavelengths.</p>
+            
             <ul>
-                <li>Yu, P., <strong>Yoon, H.A.</strong>, et al. Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1. <span class="publication-venue">COSYNE 2025</span><br>
-                <em>Plain-language:</em> We separate behavior-driven vs. sensory-driven correlations to clarify what neural correlations actually communicate.</li>
+                <li><strong>System Architecture & Design:</strong> Designed the complete system architecture from the ground up to maximize stability. Modeled all optical paths using ray-tracing simulations in <strong>Zemax OpticStudio</strong> and designed all custom, high-stability mechanical mounts in <strong>Autodesk Inventor</strong>, using more stable materials for mounts to reduce thermal and mechanical drift (everything was precision machined and designed for fixed mounting). Managed all component sourcing, vendor relations, and procurement.</li>
+                
+                <li><strong>Construction & Integration:</strong> Led a multi-disciplinary team through the physical construction and subsystem integration, culminating in a fully commissioned instrument that met all initial design specifications.</li>
+                
+                <li><strong>Data Acquisition Framework:</strong> Oversaw the electronic control for the data acquisition framework. Supervised the adaptation and validation of existing <strong>LabVIEW</strong> software for seamless integration with a new laser system, and verified all hardware interfaces to ensure robust, phase-locked operation.</li>
+                
+                <li><strong>System Alignment & Characterization:</strong> Directed the final system alignment and characterization, empirically validating key performance metrics against design simulations to confirm near diffraction-limited resolution and sub-micron mechanical stability.</li>
+                
+                <li><strong>Data Analysis Pipeline:</strong> Developed in-house data analysis pipelines for the post-processing of image stacks from FACED to extract biological data from the high-throughput, multi-terabyte datasets generated by the microscope, enabling quantitative analysis of experimental results.</li>
             </ul>
 
-            <h4>2024</h4>
-            <ul>
-                <li>Yu, P., <strong>Yoon, H.A.</strong>, et al. Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1. <span class="publication-venue">COSYNE 2024</span><br>
-                <em>Plain-language:</em> How behavior and sensory inputs combine to shape measured correlations.<br>
-                <strong>Links:</strong> <a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">COSYNE 2024 Abstract (PDF)</a> · <a href="https://www.cosyne.org/past-conferences" target="_blank" rel="noopener">COSYNE site</a></li>
-            </ul>
+            <h2 id="thesis">Thesis</h2>
 
-            <h4>2023</h4>
-            <ul>
-                <li><strong>Yoon, H.A.</strong>, Charles, A., Ji, N. Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity. <span class="publication-venue">SfN 2023</span><br>
-                <em>Plain-language:</em> What you lose (and keep) when imaging gets blurrier in depth.<br>
-                <strong>Links:</strong> <a href="/assets/neuro/SfN_Poster.pdf">SfN Poster (PDF)</a> · <a href="https://www.sfn.org/meetings/neuroscience-2024" target="_blank" rel="noopener">SfN Meeting</a></li>
-            </ul>
 
-            <h4>2018</h4>
-            <ul>
-                <li>Uribe-Patarroyo, N., <strong>Yoon, H.A.</strong>, Bouma, B. Quantifying blood flow using backscattering indicator-dilution in intravascular optical coherence tomography. <span class="publication-venue">Optics in Cardiology 2018</span><br>
-                <em>Plain-language:</em> A practical method to estimate coronary blood flow from OCT signals.</li>
-            </ul>
 
-            <h3>Manuscripts Under Review</h3>
-            <ul>
-                <li>Liang, J.F., Lee, K., Tchoe, Y., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain. (Under Review: Nature Communications)</li>
-            </ul>
-
-            <h3>Manuscripts in Preparation</h3>
-            <ul>
-                <li><strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity.</li>
-                <li>Yu, P., <strong>Yoon, H.A.</strong>, Xu, D., Yang, Y., Gozel, O., Ji, N., Doiron, B. Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.</li>
-                <li><strong>Yoon, H.A.</strong>, Hong, J. Microscopy denoising diffusion with poisson-aware physical guidance.</li>
-            </ul>
-
-            <h3>Work in Progress</h3>
-            <ul>
-                <li><strong>Yoon, H.A.</strong>, Hong, J. Multichannel Conditional Denoising Diffusion Models for Neuropil Decontamination.</li>
-                <li>Simulate, design and develop two-photon integrated free-space angular chirp enhanced delay (FACED) microscope v3.0.</li>
-            </ul>
-
-            <h2 id="talks">Talks & Presentations</h2>
-            <ul>
-                <li>Fall 2023 — <em>Simultaneous Calcium and Voltage Imaging in mouse V1</em>. Invited talk: Samsung x Stanford KSAS x UC Berkeley KGSA Academic Conference, San Jose, CA</li>
-                <li>2023 — SfN Poster: Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity (presenting author)</li>
-                <li>2024 — COSYNE: Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1 (co-author)</li>
-                <li>2025 — COSYNE: Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1 (co-author)</li>
-            </ul>
-
-            <h2 id="resources">Additional Resources</h2>
-            <ul>
-                <li>COSYNE 2025 abstract: [PDF if available]</li>
-                <li>SfN 2023 poster: <a href="/assets/neuro/SfN_Poster.pdf">/assets/neuro/SfN_Poster.pdf</a></li>
-                <li>ECoG work: <a href="/assets/neuro/109000_0_art_file_1111222_t24w55_convrt.pdf">/assets/neuro/109000_0_art_file_1111222_t24w55_convrt.pdf</a></li>
-                <li>ICADCS conference: <a href="https://icadcs.vikrantuniversity.ac.in/" target="_blank" rel="noopener">icadcs.vikrantuniversity.ac.in</a></li>
-            </ul>
+            <p><strong>[0] Measuring coronary artery flow rates using intravascular optical coherence tomography to improve the assessment of percutaneous coronary intervention.</strong><br>
+            <strong>Yoon, H.A.</strong> MIT 2019 <a href="https://dspace.mit.edu/handle/1721.1/123377">[PDF]</a></p>
 
             <p>For full bibliography, see the <a href="cv.html">Academic CV</a>.</p>
         </main>
     </div>
     <footer>
-        <a rel="me" href="https://github.com/hayun-yoon">GitHub</a>
-        <a rel="me" href="https://linkedin.com/in/ha-yun-anna-yoon-509030118">LinkedIn</a>
-        <p>&copy; 2025 Ha Yun Anna Yoon · <a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a></p>
+        <p>&copy; 2025 Ha Yun Anna Yoon</p>
     </footer>
 </body>
 </html>

@@ -15,7 +15,7 @@ title: Publications
   Links: [COSYNE 2024 Abstract (PDF)](/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf) · [COSYNE site](https://www.cosyne.org/past-conferences)
 
 ### 2023
-- **Yoon, H.A.**, Charles, A., Ji, N. Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity. <span class="publication-venue">SfN 2023</span>  
+- **Yoon, H.A.**, Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity. <span class="publication-venue">SfN 2023</span>  
   Plain-language: What you lose (and keep) when imaging gets blurrier in depth.  
   Links: [SfN Poster (PDF)](/assets/neuro/SfN_Poster.pdf) · [SfN Meeting](https://www.sfn.org/meetings/neuroscience-2024)
 
@@ -40,12 +40,12 @@ For full bibliography, see the [Academic CV](/cv.html).
 - Liang, J.F., Lee, K., Tchoe, Y., **Yoon, H.A.**, Garrett, J., Dahye, S., Halgren, E., Ji, N. Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain. (Under Review: Nature Communications)
 
 ### Manuscripts in Preparation
-- **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity.
+- **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.
 - Yu, P., **Yoon, H.A.**, Xu, D., Yang, Y., Gozel, O., Ji, N., Doiron, B. Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.
 - **Yoon, H.A.**, Hong, J. Microscopy denoising diffusion with poisson-aware physical guidance.
 
 ### Work Completed
-- Simulate, design and develop two-photon integrated free-space angular chirp enhanced delay (FACED) microscope v3.0.
+- Simulate, design and develop 2P integrated free-space angular chirp enhanced delay microscope v3.0.
 
 ### Work in Progress
 - **Yoon, H.A.**, Hong, J. Multichannel Conditional Denoising Diffusion Models for Neuropil Decontamination.

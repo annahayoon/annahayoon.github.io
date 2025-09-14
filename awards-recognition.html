@@ -51,68 +51,77 @@
             border-top: none;
             margin-top: 20px;
         }
+        .awards-list {
+            margin: 20px 0;
+        }
+        .award-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 3px solid #007bff;
+            background-color: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        .award-year {
+            font-weight: bold;
+            color: #007bff;
+            min-width: 80px;
+            margin-right: 20px;
+            font-size: 0.9em;
+        }
+        .award-details {
+            flex: 1;
+        }
+        .award-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        .award-org {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="wrapper">
-        <aside class="sidebar">
-            <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Ha Yun Anna Yoon</h1>
-            <p class="description">Machine Learning Research Scientist with a background in Computer Vision and Computational Neuroscience.</p>
-            <nav aria-label="Primary">
-                <ul class="nav-list">
-                    <li><a href="preview.html">Home</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="research-publications.html">Research & Publications</a></li>
-                    <li><a href="teaching.html">Teaching & Mentoring</a></li>
-                    <li><a href="ml-work.html">ML Work (for fun)</a></li>
-                    <li><a href="awards-recognition.html" class="active">Awards & Recognition</a></li>
-                </ul>
-            </nav>
-        </aside>
         <main id="main-content" class="main-content" tabindex="-1">
-            <h1>Awards & Recognition</h1>
-            
-            <div class="toc">
-                <h2>Table of Contents</h2>
-                <ul>
-                    <li><a href="#academic-news">Academic News & Publications</a></li>
-                    <li><a href="#awards">Awards & Recognition</a></li>
-                    <li><a href="#talks">Recent Talks & Presentations</a></li>
-                </ul>
+            <div class="page-header">
+                <h1><a href="preview.html">Ha Yun Anna Yoon</a></h1>
+                <nav class="inline-nav" aria-label="Primary">
+                    <a href="bio.html">Bio</a>
+                    <span class="nav-separator">•</span>
+                    <a href="research-publications.html">Research</a>
+                    <span class="nav-separator">•</span>
+                    <a href="teaching.html">Teaching</a>
+                    <span class="nav-separator">•</span>
+                    <a href="ml-work.html">ML Work</a>
+                    <span class="nav-separator">•</span>
+                    <a href="awards-recognition.html" class="active">Awards</a>
+                </nav>
             </div>
             
-            <h2 id="academic-news">Academic News & Publications</h2>
+            <h2>Awards & Recognition</h2>
+            
             <ul>
-                <li>2025 — COSYNE accepted: Nonsense-free behavioral correlation in mouse V1 (co-author).</li>
-                <li>2024 — COSYNE: Behavioral correlation integration in mouse V1 (co-author). <a href="/assets/neuro/Cosyne24_Abstract_PeijiaYu.pdf">Abstract</a></li>
-                <li>2023 — SfN: Axial resolution vs. functional retrieval in 2p calcium imaging (presenting author). <a href="/assets/neuro/SfN_Poster.pdf">Poster</a></li>
+                <li>2024-2025 — <a href="https://grad.berkeley.edu/students/finding-community/diversity-and-community-fellows/" target="_blank" rel="noopener">Graduate Diversity and Community Fellowship</a>, UC Berkeley Office for Graduate Diversity</li>
+                <li>2024 — <a href="2024-재미한인장학기금-장학생-명단.pdf" target="_blank" rel="noopener">Excellent Honor Scholarship (Korean Honor Scholarship)</a>, Korean Embassy in the U.S.A.</li>
+                <li>2024 — <a href="https://ieeephotonics.org/news/empowering-the-next-generation-university-of-california-berkeleys-photobears-chapter-highlights/" target="_blank" rel="noopener">IEEE Photonics Society "Most Improved Chapter Award"</a></li>
+                <li>2024 — <a href="https://h2h8.com/" target="_blank" rel="noopener">H2H8 Mentor Research Program</a>, University of California, Berkeley</li>
+                <li>2023 — <a href="https://h2h8.com/" target="_blank" rel="noopener">H2H8 Fellowship</a>, University of California, Berkeley</li>
+                <li>2019 — <a href="https://meche.mit.edu/news-media/news-awards-winter-2018" target="_blank" rel="noopener">MIT Martin Prince Innovation Award</a>, Massachusetts Institute of Technology</li>
+                <li>2015-2019 — Nordstrom Scholarship Winner, Nordstrom</li>
+                <li>2015 — Most Valuable Student, National & Georgia Elks Association</li>
+                <li>2015 — Regional Finalist, Coca Cola Scholars Foundation</li>
+                <li>2015 — National Merit Scholar, National Merit Scholarship Corporation</li>
             </ul>
 
-            <h2 id="awards">Awards & Recognition</h2>
-            <ul>
-                <li>2024-2025 — Graduate Diversity and Community Fellowship ($7,500), UC Berkeley Office for Graduate Diversity</li>
-                <li>2024 — Korean Honor Scholarship ($3,000), Korean Embassy in the U.S.A.</li>
-                <li>2024 — IEEE Photonics Society "Most Improved Chapter Award" ($200)</li>
-                <li>2024 — H2H8 Mentor Research Program ($3,500), UC Berkeley</li>
-                <li>2023 — H2H8 Fellowship ($10,000), UC Berkeley</li>
-                <li>2019 — MIT Martin Prince Innovation Award ($3,600), MIT</li>
-            </ul>
-
-            <h2 id="talks">Recent Talks & Presentations</h2>
-            <ul>
-                <li>Fall 2023 — <em>Simultaneous Calcium and Voltage Imaging in mouse V1</em>. Invited talk: Samsung x Stanford KSAS x UC Berkeley KGSA Academic Conference, San Jose, CA</li>
-                <li>2023 — SfN Poster: Effects of reducing axial resolution in two-photon calcium imaging on retrieving functional neuronal activity (presenting author)</li>
-                <li>2024 — COSYNE: Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1 (co-author)</li>
-                <li>2025 — COSYNE: Quantification of nonsense-free correlation uncovers the interaction between top-down and bottom-up sources of behavioral correlation in mouse V1 (co-author)</li>
-            </ul>
         </main>
     </div>
     <footer>
-        <a rel="me" href="https://github.com/hayun-yoon">GitHub</a>
-        <a rel="me" href="https://linkedin.com/in/ha-yun-anna-yoon-509030118">LinkedIn</a>
-        <p>&copy; 2025 Ha Yun Anna Yoon · <a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a></p>
+        <p>&copy; 2025 Ha Yun Anna Yoon</p>
     </footer>
 </body>
 </html>

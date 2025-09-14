@@ -62,8 +62,12 @@ title: Home
 
 <div class="widget">
 <h2 class="widget-title">Research Interests</h2>
-
-<p>Biophotonics, System Neuroscience, Image Processing, Machine Learning</p>
+<p style="margin: 5px 0 15px 0; color: var(--text-color);">
+  <a href="/research-publications.html#faced-microscope" style="color: var(--text-color); text-decoration: none;">Biophotonics</a> |
+  <a href="/research-publications.html#conference" style="color: var(--text-color); text-decoration: none;">Systems Neuroscience</a> |
+  <a href="/research-publications.html" style="color: var(--text-color); text-decoration: none;">Image Processing</a> |
+  <a href="/ml-work.html" style="color: var(--text-color); text-decoration: none;">Machine Learning</a>
+</p>
 
 <p><a href="/research.html" class="btn btn-secondary">View detailed research experience</a></p>
 </div>

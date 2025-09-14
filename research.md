@@ -5,7 +5,24 @@ title: Research
 
 ## Research Interests
 
-Biomedical Optics, Population Imaging (Calcium + Voltage), Systems Neuroscience, Machine Learning
+<div class="research-interests-grid">
+  <div class="interest-panel">
+    <h4>Biomedical Optics</h4>
+    <p>Advanced optical imaging technologies</p>
+  </div>
+  <div class="interest-panel">
+    <h4>Population Imaging</h4>
+    <p>Calcium + Voltage signal analysis</p>
+  </div>
+  <div class="interest-panel">
+    <h4>Systems Neuroscience</h4>
+    <p>Neural circuit dynamics & behavior</p>
+  </div>
+  <div class="interest-panel">
+    <h4>Machine Learning</h4>
+    <p>Deep learning for biomedical data</p>
+  </div>
+</div>
 
 ## Research Experience
 

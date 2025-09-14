@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemap location
 Sitemap: https://annahayoon.github.io/sitemap.xml
 
-# Allow all search engines to crawl all content
-Disallow:
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

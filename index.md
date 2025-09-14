@@ -98,7 +98,7 @@ title: Home
   </div>
 </div>
 
-<p><a href="/ml-work.html" class="btn btn-secondary">View all ML work and reports (for fun)</a></p>
+<p><a href="/ml-work.html" class="btn btn-secondary">View all ML work and reports</a></p>
 </div>
 
 <div class="widget">

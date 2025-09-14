@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ML Work
+title: ML (for fun)
 ---
 
 ## ML-Based Projects and Reports

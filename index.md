@@ -14,7 +14,7 @@ title: Home
       <a href="/research.html" class="btn btn-secondary">Research</a>
       <a href="/publications.html" class="btn btn-secondary">Publications</a>
       <a href="/teaching.html" class="btn btn-secondary">Teaching</a>
-      <a href="/ml-work.html" class="btn btn-secondary">ML Work</a>
+      <a href="/ml-work.html" class="btn btn-secondary">ML (for fun)</a>
     </div>
     <p class="hero-contact"><a href="/Yoon_Ha Yun Anna_Resume.pdf" target="_blank">CV</a> • <a href="https://github.com/annahayoon" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/ha-yun-anna-yoon" target="_blank" rel="noopener">LinkedIn</a> • Reach me at <a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a></p>
 
@@ -98,7 +98,7 @@ title: Home
   </div>
 </div>
 
-<p><a href="/ml-work.html" class="btn btn-secondary">View all ML work and reports</a></p>
+<p><a href="/ml-work.html" class="btn btn-secondary">View all ML work and reports (for fun)</a></p>
 </div>
 
 <div class="widget">

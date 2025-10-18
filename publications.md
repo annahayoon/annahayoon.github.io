@@ -40,7 +40,7 @@ For full bibliography, see the [Academic CV](/cv.html).
 
 ### Manuscripts in Preparation
 - **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.
-- Yu, P., **Yoon, H.A.**, Xu, D., Yang, Y., Gozel, O., Ji, N., Doiron, B. Integration of behavioral related correlation from top-down and bottom-up pathways in mouse V1.
+- Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. (* = denotes equal contributions)
 - **Yoon, H.A.**, Hong, J. Microscopy denoising diffusion with poisson-aware physical guidance.
 
 ### Work Completed

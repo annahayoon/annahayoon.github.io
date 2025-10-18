@@ -41,7 +41,7 @@ For full bibliography, see the [Academic CV](/cv.html).
 ### Manuscripts in Preparation
 - **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.
 - Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. (* = denotes equal contributions)
-- **Yoon, H.A.**, Hong, J. Microscopy denoising diffusion with poisson-aware physical guidance.
+- **Yoon, H.A.**, Hong, J. Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration. *Targeting CVPR 2026 submission*
 
 ### Work Completed
 - Simulate, design and develop 2P integrated free-space angular chirp enhanced delay microscope v3.0.

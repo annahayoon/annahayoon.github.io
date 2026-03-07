@@ -37,11 +37,11 @@ For full bibliography, see the [Academic CV](/cv.html).
 ## All Publications (from CV)
 
 ### Under Review
-- Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. (* = denotes equal contributions) <span class="publication-venue">[Under Review]</span> [PDF](https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf)
+- Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. [PDF](https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf) (* = denotes equal contributions) <span class="publication-venue">[Under Review]</span>
 
 ### Manuscripts in Preparation
 - **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.
-- **Yoon, H.A.**, Hong, J. Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration. *Targeting CVPR 2026 submission*
+- **Yoon, H.A.**, Hong, J. Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration.
 
 ### Work Completed
 - Simulate, design and develop 2P integrated free-space angular chirp enhanced delay microscope v3.0.

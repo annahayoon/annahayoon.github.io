@@ -37,10 +37,10 @@ For full bibliography, see the [Academic CV](/cv.html).
 ## All Publications (from CV)
 
 ### Under Review
+- Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. (* = denotes equal contributions) <span class="publication-venue">[Under Review]</span> [PDF](https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf)
 
 ### Manuscripts in Preparation
 - **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.
-- Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. (* = denotes equal contributions)
 - **Yoon, H.A.**, Hong, J. Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration. *Targeting CVPR 2026 submission*
 
 ### Work Completed

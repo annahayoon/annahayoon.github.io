@@ -207,8 +207,6 @@
             display: flex;
             flex-direction: column;
             gap: 14px;
-            /* Shared cap with main column; used for tower width and assembly row */
-            --faced-tower-max: min(1140px, 100%);
         }
         .faced-gallery img {
             max-width: 100%;
@@ -256,9 +254,18 @@
             padding-left: 64px;
             padding-right: 64px;
             box-sizing: border-box;
+            /* Same track as scaled FACED_Tower.png (mirrors .wrapper + .main-content) */
+            --faced-tower-max: min(1140px, 100%);
         }
-        .main-content .faced-v3-fullbleed > p {
-            max-width: none;
+        .main-content .faced-v3-fullbleed > h2,
+        .main-content .faced-v3-fullbleed > p,
+        .main-content .faced-v3-fullbleed > ul,
+        .main-content .faced-v3-fullbleed > .faced-gallery {
+            max-width: var(--faced-tower-max);
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
         }
         @media (max-width: 992px) {
             .main-content .faced-v3-fullbleed {

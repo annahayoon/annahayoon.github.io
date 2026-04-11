@@ -76,6 +76,28 @@
             overflow-x: auto;
             max-width: 100%;
         }
+        .faced-gallery {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .faced-gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+        }
+        .faced-gallery-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: flex-start;
+        }
+        .faced-gallery-row img {
+            flex: 1 1 220px;
+            min-width: 0;
+        }
     </style>
 </head>
 <body>
@@ -121,9 +143,6 @@
             
             <p><span class="publication-title">[3] Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration.</span><br>
             <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
-            
-            <p><span class="publication-title">[4] Multichannel Conditional Denoising Diffusion Models for Neuropil Decontamination.</span><br>
-            <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
 
             <h2 id="conference">Conferences</h2>
             
@@ -162,6 +181,14 @@
 
             <h2 id="faced-microscope">FACED v3.0 <span style="font-size: 0.7em; font-weight: normal;">Ji Lab</span></h2>
             <p>Designed and developed a more stable and wide-range covering excitation wavelength 2P integrated free-space angular chirp enhanced delay (FACED) microscope v3.0 for high-speed volumetric neural imaging. This project was launched to overcome the inherent design limitations of the prior system: <strong>significant thermal and mechanical instability</strong> from its off-the-shelf parts, and a fixed 1035nm laser system that was incompatible with <strong>SOTA genetically encoded sensors</strong> optimized for other wavelengths.</p>
+
+            <div class="faced-gallery" role="group" aria-label="FACED v3.0 microscope photographs">
+                <img src="assets/images/FACED_Tower.png" alt="FACED v3.0 optical tower assembly" width="3360" height="1360" loading="lazy" decoding="async">
+                <div class="faced-gallery-row">
+                    <img src="assets/images/EntireAssembly1.png" alt="FACED v3.0 full instrument assembly (view 1)" width="1920" height="1080" loading="lazy" decoding="async">
+                    <img src="assets/images/EntireAssembly3.png" alt="FACED v3.0 full instrument assembly (view 2)" width="1920" height="1080" loading="lazy" decoding="async">
+                </div>
+            </div>
             
             <ul>
                 <li><strong>System Architecture & Design:</strong> Designed the complete system architecture from the ground up to maximize stability. Modeled all optical paths using ray-tracing simulations in <strong>Zemax OpticStudio</strong> and designed all custom, high-stability mechanical mounts in <strong>Autodesk Inventor</strong>, using more stable materials for mounts to reduce thermal and mechanical drift (everything was precision machined and designed for fixed mounting). Managed all component sourcing, vendor relations, and procurement.</li>

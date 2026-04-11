@@ -97,16 +97,91 @@
             align-items: center;
             justify-content: center;
             align-self: stretch;
-            text-decoration: none;
             border: 1px solid #e9ecef;
             border-radius: 6px;
             background: #fafbfc;
             box-sizing: border-box;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            appearance: none;
+            -webkit-appearance: none;
         }
         .pub-row__thumb:hover {
             border-color: #007bff;
             background: #f0f7ff;
-            text-decoration: none;
+        }
+        .pub-row__thumb:focus {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+        .pub-figure-dialog {
+            padding: 0;
+            border: none;
+            margin: 0;
+            background: transparent;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            max-height: 100%;
+            box-sizing: border-box;
+        }
+        .pub-figure-dialog::backdrop {
+            background: rgba(0, 0, 0, 0.45);
+        }
+        .pub-figure-dialog__scrim {
+            width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .pub-figure-dialog__panel {
+            position: relative;
+            padding: 14px 14px 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            border: 1px solid #e9ecef;
+            max-width: calc(100vw - 32px);
+        }
+        .pub-figure-dialog__close {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            color: #64748b;
+            border-radius: 4px;
+        }
+        .pub-figure-dialog__close:hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        .pub-figure-dialog__img {
+            display: block;
+            margin: 0 auto;
+            max-width: min(360px, calc(100vw - 80px));
+            max-height: min(360px, 55vh);
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        .pub-figure-dialog__open {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 0.85rem;
         }
         .pub-row__thumb img {
             width: 88px;
@@ -209,9 +284,9 @@
                 <div class="pub-row__body">
                     <p><span style="white-space: nowrap"><span class="publication-title">[0] Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain.</span> <a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685211v2.full.pdf">[PDF]</a></span> <span style="white-space: nowrap">Liang, J.F., Lee, K., Tchoe, Y., Ganji, M., Vatsyayan, R., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. <em>[Under Review]</em></span></p>
                 </div>
-                <a class="pub-row__thumb" href="/assets/images/Estim.svg" aria-label="Open illustration (SVG) for publication [0]">
+                <button type="button" class="pub-row__thumb" data-figure-src="/assets/images/Estim.svg" aria-label="Show illustration preview for publication [0]">
                     <img src="/assets/images/Estim.svg" alt="" width="88" height="88" decoding="async">
-                </a>
+                </button>
             </div>
 
             <div class="pub-row">
@@ -220,9 +295,9 @@
                     Yu, P.*, <strong>Yoon, H.A.</strong>*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B.<br>
                     * = denotes equal contributions <em>[Under Review]</em></p>
                 </div>
-                <a class="pub-row__thumb" href="/assets/images/U19_drawing.svg" aria-label="Open illustration (SVG) for publication [1]">
+                <button type="button" class="pub-row__thumb" data-figure-src="/assets/images/U19_drawing.svg" aria-label="Show illustration preview for publication [1]">
                     <img src="/assets/images/U19_drawing.svg" alt="" width="88" height="88" decoding="async">
-                </a>
+                </button>
             </div>
 
             <div class="pub-row">
@@ -230,9 +305,9 @@
                     <p><span class="publication-title">[2] High Spatial Resolution is Essential for Accurate In Vivo Calcium Imaging of Neuronal Populations.</span><br>
                     <strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. <em>[In preparation]</em></p>
                 </div>
-                <a class="pub-row__thumb" href="/assets/images/ExcNA.svg" aria-label="Open illustration (SVG) for publication [2]">
+                <button type="button" class="pub-row__thumb" data-figure-src="/assets/images/ExcNA.svg" aria-label="Show illustration preview for publication [2]">
                     <img src="/assets/images/ExcNA.svg" alt="" width="88" height="88" decoding="async">
-                </a>
+                </button>
             </div>
 
             <p><span class="publication-title">[3] Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration.</span><br>
@@ -306,7 +381,51 @@
             <strong>Yoon, H.A.</strong> MIT 2019 <a href="https://dspace.mit.edu/handle/1721.1/123377">[PDF]</a></p>
 
             <p>For full bibliography, see the <a href="cv.html">Academic CV</a>.</p>
+
+            <dialog id="pub-figure-dialog" class="pub-figure-dialog" aria-label="Publication figure preview">
+                <div class="pub-figure-dialog__scrim">
+                    <div class="pub-figure-dialog__panel">
+                        <button type="button" class="pub-figure-dialog__close" aria-label="Close">&times;</button>
+                        <img id="pub-figure-dialog-img" class="pub-figure-dialog__img" src="" alt="">
+                        <a id="pub-figure-dialog-open" class="pub-figure-dialog__open" href="#" target="_blank" rel="noopener noreferrer">Open SVG in new tab</a>
+                    </div>
+                </div>
+            </dialog>
         </main>
     </div>
+    <script>
+    (function () {
+        var dialog = document.getElementById('pub-figure-dialog');
+        var img = document.getElementById('pub-figure-dialog-img');
+        var openLink = document.getElementById('pub-figure-dialog-open');
+        if (!dialog || !img || !openLink || typeof dialog.showModal !== 'function') return;
+
+        function openPreview(src, label) {
+            img.src = src;
+            img.alt = label || 'Publication figure';
+            openLink.href = src;
+            dialog.showModal();
+        }
+
+        document.querySelectorAll('.pub-row__thumb[data-figure-src]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                openPreview(btn.getAttribute('data-figure-src'), btn.getAttribute('aria-label'));
+            });
+        });
+
+        var closeBtn = dialog.querySelector('.pub-figure-dialog__close');
+        if (closeBtn) closeBtn.addEventListener('click', function () { dialog.close(); });
+
+        var scrim = dialog.querySelector('.pub-figure-dialog__scrim');
+        if (scrim) scrim.addEventListener('click', function (e) {
+            if (e.target === scrim) dialog.close();
+        });
+
+        dialog.addEventListener('close', function () {
+            img.removeAttribute('src');
+            openLink.href = '#';
+        });
+    })();
+    </script>
 </body>
 </html>

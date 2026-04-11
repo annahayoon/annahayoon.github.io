@@ -207,6 +207,8 @@
             display: flex;
             flex-direction: column;
             gap: 14px;
+            /* Shared cap with main column; used for tower width and assembly row */
+            --faced-tower-max: min(1140px, 100%);
         }
         .faced-gallery img {
             max-width: 100%;
@@ -214,15 +216,36 @@
             border: 1px solid #e9ecef;
             border-radius: 4px;
         }
+        /* Tower: same max content width as .wrapper + .main-content (1300 − 64 − 96 at xl) */
+        .faced-gallery > img:first-of-type {
+            display: block;
+            width: 100%;
+            max-width: var(--faced-tower-max);
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+        }
+        /* Row matches tower track; each image is half that width (minus gap) */
         .faced-gallery-row {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 14px;
-            align-items: flex-start;
+            width: 100%;
+            max-width: var(--faced-tower-max);
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            align-items: start;
         }
         .faced-gallery-row img {
-            flex: 1 1 220px;
-            min-width: 0;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        @media (max-width: 560px) {
+            .faced-gallery-row {
+                grid-template-columns: 1fr;
+            }
         }
         /* Full viewport width: escape .wrapper (1300px) and .main-content p (70ch) */
         .main-content .faced-v3-fullbleed {

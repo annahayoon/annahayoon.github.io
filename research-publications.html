@@ -71,6 +71,60 @@
             line-height: 1.1;
             letter-spacing: -0.02em;
         }
+        .pub-row {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            gap: 18px;
+            margin: 1em 0;
+        }
+        .pub-row__body {
+            flex: 1;
+            min-width: 0;
+        }
+        .main-content .pub-row .pub-row__body p {
+            max-width: none;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .pub-row .publication-title {
+            white-space: normal;
+        }
+        .pub-row__thumb {
+            flex: 0 0 104px;
+            width: 104px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: stretch;
+            text-decoration: none;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: #fafbfc;
+            box-sizing: border-box;
+        }
+        .pub-row__thumb:hover {
+            border-color: #007bff;
+            background: #f0f7ff;
+            text-decoration: none;
+        }
+        .pub-row__thumb img {
+            width: 88px;
+            height: 88px;
+            object-fit: contain;
+            display: block;
+        }
+        @media (max-width: 640px) {
+            .pub-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .pub-row__thumb {
+                align-self: center;
+                width: 104px;
+                min-height: 104px;
+            }
+        }
         .talk-entry {
             white-space: nowrap;
             overflow-x: auto;
@@ -151,15 +205,36 @@
             
             <h2 id="publications">Publications</h2>
 
-            <p><span style="white-space: nowrap"><span class="publication-title">[0] Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain.</span> <a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685211v2.full.pdf">[PDF]</a></span> <span style="white-space: nowrap">Liang, J.F., Lee, K., Tchoe, Y., Ganji, M., Vatsyayan, R., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. <em>[Under Review]</em></span></p>
-            
-            <p><span class="publication-title">[1] Convergence of cortical and thalamic origins of free behavior correlate in mouse V1.</span> <a href="https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf">[PDF]</a><br>
-            Yu, P.*, <strong>Yoon, H.A.</strong>*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B.<br>
-            * = denotes equal contributions <em>[Under Review]</em></p>
-            
-            <p><span class="publication-title">[2] Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.</span><br>
-            <strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. <em>[In preparation]</em></p>
-            
+            <div class="pub-row">
+                <div class="pub-row__body">
+                    <p><span style="white-space: nowrap"><span class="publication-title">[0] Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain.</span> <a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685211v2.full.pdf">[PDF]</a></span> <span style="white-space: nowrap">Liang, J.F., Lee, K., Tchoe, Y., Ganji, M., Vatsyayan, R., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. <em>[Under Review]</em></span></p>
+                </div>
+                <a class="pub-row__thumb" href="/assets/images/Estim.svg" aria-label="Open illustration (SVG) for publication [0]">
+                    <img src="/assets/images/Estim.svg" alt="" width="88" height="88" decoding="async">
+                </a>
+            </div>
+
+            <div class="pub-row">
+                <div class="pub-row__body">
+                    <p><span class="publication-title">[1] Convergence of cortical and thalamic origins of free behavior correlate in mouse V1.</span> <a href="https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf">[PDF]</a><br>
+                    Yu, P.*, <strong>Yoon, H.A.</strong>*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B.<br>
+                    * = denotes equal contributions <em>[Under Review]</em></p>
+                </div>
+                <a class="pub-row__thumb" href="/assets/images/U19_drawing.svg" aria-label="Open illustration (SVG) for publication [1]">
+                    <img src="/assets/images/U19_drawing.svg" alt="" width="88" height="88" decoding="async">
+                </a>
+            </div>
+
+            <div class="pub-row">
+                <div class="pub-row__body">
+                    <p><span class="publication-title">[2] High Spatial Resolution is Essential for Accurate In Vivo Calcium Imaging of Neuronal Populations.</span><br>
+                    <strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. <em>[In preparation]</em></p>
+                </div>
+                <a class="pub-row__thumb" href="/assets/images/ExcNA.svg" aria-label="Open illustration (SVG) for publication [2]">
+                    <img src="/assets/images/ExcNA.svg" alt="" width="88" height="88" decoding="async">
+                </a>
+            </div>
+
             <p><span class="publication-title">[3] Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration.</span><br>
             <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
 
@@ -203,10 +278,10 @@
             <p>Designed and developed a more stable and wide-range covering excitation wavelength 2P integrated free-space angular chirp enhanced delay (FACED) microscope v3.0 for high-speed volumetric neural imaging. This project was launched to overcome the inherent design limitations of the prior system: <strong>significant thermal and mechanical instability</strong> from its off-the-shelf parts, and a fixed 1035nm laser system that was incompatible with <strong>SOTA genetically encoded sensors</strong> optimized for other wavelengths.</p>
 
             <div class="faced-gallery" role="group" aria-label="FACED v3.0 microscope photographs">
-                <img src="assets/images/FACED_Tower.png" alt="FACED v3.0 optical tower assembly" width="3360" height="1360" loading="lazy" decoding="async">
+                <img src="/assets/images/FACED_Tower.png?v=20260411" alt="FACED v3.0 optical tower assembly" width="2331" height="1263" loading="lazy" decoding="async">
                 <div class="faced-gallery-row">
-                    <img src="assets/images/EntireAssembly1.png" alt="FACED v3.0 full instrument assembly (view 1)" width="1920" height="1080" loading="lazy" decoding="async">
-                    <img src="assets/images/EntireAssembly3.png" alt="FACED v3.0 full instrument assembly (view 2)" width="1920" height="1080" loading="lazy" decoding="async">
+                    <img src="/assets/images/EntireAssembly1.png?v=20260411" alt="FACED v3.0 full instrument assembly (view 1)" width="1296" height="639" loading="lazy" decoding="async">
+                    <img src="/assets/images/EntireAssembly3.png?v=20260411" alt="FACED v3.0 full instrument assembly (view 2)" width="1315" height="668" loading="lazy" decoding="async">
                 </div>
             </div>
             

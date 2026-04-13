@@ -59,7 +59,7 @@
             padding-top: 20px;
             border-top: 2px solid #e9ecef;
         }
-        h2:first-of-type {
+        main.main-content > h2:first-of-type {
             border-top: none;
             margin-top: 20px;
         }
@@ -71,10 +71,207 @@
             line-height: 1.1;
             letter-spacing: -0.02em;
         }
+        .pub-row {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            gap: 18px;
+            margin: 1em 0;
+        }
+        .pub-row__body {
+            flex: 1;
+            min-width: 0;
+        }
+        .main-content .pub-row .pub-row__body p {
+            max-width: none;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .pub-row .publication-title {
+            white-space: normal;
+        }
+        .pub-row__thumb {
+            flex: 0 0 104px;
+            width: 104px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: stretch;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: #fafbfc;
+            box-sizing: border-box;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+        .pub-row__thumb:hover {
+            border-color: #007bff;
+            background: #f0f7ff;
+        }
+        .pub-row__thumb:focus {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+        .pub-figure-dialog {
+            padding: 0;
+            border: none;
+            margin: 0;
+            background: transparent;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            max-height: 100%;
+            box-sizing: border-box;
+        }
+        .pub-figure-dialog::backdrop {
+            background: rgba(0, 0, 0, 0.45);
+        }
+        .pub-figure-dialog__scrim {
+            width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .pub-figure-dialog__panel {
+            position: relative;
+            padding: 14px 14px 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            border: 1px solid #e9ecef;
+            max-width: calc(100vw - 32px);
+        }
+        .pub-figure-dialog__close {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            color: #64748b;
+            border-radius: 4px;
+        }
+        .pub-figure-dialog__close:hover {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        /* Modal view = 8× the 88px thumbnail (704px), capped on small viewports */
+        .pub-figure-dialog__img {
+            --pub-thumb: 88px;
+            --pub-zoom: 8;
+            display: block;
+            margin: 0 auto;
+            width: min(calc(var(--pub-thumb) * var(--pub-zoom)), calc(100vw - 64px));
+            height: min(calc(var(--pub-thumb) * var(--pub-zoom)), 85vh);
+            max-width: calc(100vw - 64px);
+            max-height: 85vh;
+            object-fit: contain;
+        }
+        .pub-row__thumb img {
+            width: 88px;
+            height: 88px;
+            object-fit: contain;
+            display: block;
+        }
+        @media (max-width: 640px) {
+            .pub-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .pub-row__thumb {
+                align-self: center;
+                width: 104px;
+                min-height: 104px;
+            }
+        }
         .talk-entry {
             white-space: nowrap;
             overflow-x: auto;
             max-width: 100%;
+        }
+        .faced-gallery {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .faced-gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+        }
+        /* Tower: same max content width as .wrapper + .main-content (1300 − 64 − 96 at xl) */
+        .faced-gallery > img:first-of-type {
+            display: block;
+            width: 100%;
+            max-width: var(--faced-tower-max);
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+        }
+        /* Row matches tower track; each image is half that width (minus gap) */
+        .faced-gallery-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            width: 100%;
+            max-width: var(--faced-tower-max);
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            align-items: start;
+        }
+        .faced-gallery-row img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        @media (max-width: 560px) {
+            .faced-gallery-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Full viewport width: escape .wrapper (1300px) and .main-content p (70ch) */
+        .main-content .faced-v3-fullbleed {
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            padding-left: 64px;
+            padding-right: 64px;
+            box-sizing: border-box;
+            /* Same track as scaled FACED_Tower.png (mirrors .wrapper + .main-content) */
+            --faced-tower-max: min(1140px, 100%);
+        }
+        .main-content .faced-v3-fullbleed > h2,
+        .main-content .faced-v3-fullbleed > p,
+        .main-content .faced-v3-fullbleed > ul,
+        .main-content .faced-v3-fullbleed > .faced-gallery {
+            max-width: var(--faced-tower-max);
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+        @media (max-width: 992px) {
+            .main-content .faced-v3-fullbleed {
+                padding-left: 22px;
+                padding-right: 22px;
+            }
         }
     </style>
 </head>
@@ -110,19 +307,37 @@
             
             <h2 id="publications">Publications</h2>
 
-            <p><span style="white-space: nowrap"><span class="publication-title">[0] Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain.</span> <a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685211v2.full.pdf">[PDF]</a></span> <span style="white-space: nowrap">Liang, J.F., Lee, K., Tchoe, Y., Ganji, M., Vatsyayan, R., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. <em>[Under Review]</em></span></p>
-            
-            <p><span class="publication-title">[1] Convergence of cortical and thalamic origins of free behavior correlate in mouse V1.</span> <a href="https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf">[PDF]</a><br>
-            Yu, P.*, <strong>Yoon, H.A.</strong>*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B.<br>
-            * = denotes equal contributions <em>[Under Review]</em></p>
-            
-            <p><span class="publication-title">[2] Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.</span><br>
-            <strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. <em>[In preparation]</em></p>
-            
+            <div class="pub-row">
+                <div class="pub-row__body">
+                    <p><span style="white-space: nowrap"><span class="publication-title">[0] Stimulation with ECoG electrodes modulates cortical activity and sensory coding in the awake mouse brain.</span> <a href="https://www.biorxiv.org/content/10.1101/2025.10.28.685211v2.full.pdf">[PDF]</a></span> <span style="white-space: nowrap">Liang, J.F., Lee, K., Tchoe, Y., Ganji, M., Vatsyayan, R., <strong>Yoon, H.A.</strong>, Garrett, J., Dahye, S., Halgren, E., Ji, N. <em>[Under Review]</em></span></p>
+                </div>
+                <button type="button" class="pub-row__thumb" data-figure-src="/assets/images/Estim.svg" aria-label="Show 8× zoom preview for publication [0]">
+                    <img src="/assets/images/Estim.svg" alt="" width="88" height="88" decoding="async">
+                </button>
+            </div>
+
+            <div class="pub-row">
+                <div class="pub-row__body">
+                    <p><span class="publication-title">[1] Convergence of cortical and thalamic origins of free behavior correlate in mouse V1.</span> <a href="https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf">[PDF]</a><br>
+                    Yu, P.*, <strong>Yoon, H.A.</strong>*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B.<br>
+                    * = denotes equal contributions <em>[Under Review]</em></p>
+                </div>
+                <button type="button" class="pub-row__thumb" data-figure-src="/assets/images/U19_drawing.svg" aria-label="Show 8× zoom preview for publication [1]">
+                    <img src="/assets/images/U19_drawing.svg" alt="" width="88" height="88" decoding="async">
+                </button>
+            </div>
+
+            <div class="pub-row">
+                <div class="pub-row__body">
+                    <p><span class="publication-title">[2] High Spatial Resolution is Essential for Accurate In Vivo Calcium Imaging of Neuronal Populations.</span><br>
+                    <strong>Yoon, H.A.</strong>, Ferrer-Imbert, G., Charles, A., Ji, N. <em>[In preparation]</em></p>
+                </div>
+                <button type="button" class="pub-row__thumb" data-figure-src="/assets/images/ExcNA.svg" aria-label="Show 8× zoom preview for publication [2]">
+                    <img src="/assets/images/ExcNA.svg" alt="" width="88" height="88" decoding="async">
+                </button>
+            </div>
+
             <p><span class="publication-title">[3] Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration.</span><br>
-            <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
-            
-            <p><span class="publication-title">[4] Multichannel Conditional Denoising Diffusion Models for Neuropil Decontamination.</span><br>
             <strong>Yoon, H.A.</strong>, Hong, J. <em>[In preparation]</em></p>
 
             <h2 id="conference">Conferences</h2>
@@ -160,8 +375,17 @@
             <p class="talk-entry">[2] May 2026 — <em>Convergence of cortical and thalamic origins of free behavior correlate in mouse V1</em>.<br>
             UC Berkeley Neuroscience Department Computational Neuroscience Seminar</p>
 
+            <section class="faced-v3-fullbleed" aria-labelledby="faced-microscope">
             <h2 id="faced-microscope">FACED v3.0 <span style="font-size: 0.7em; font-weight: normal;">Ji Lab</span></h2>
             <p>Designed and developed a more stable and wide-range covering excitation wavelength 2P integrated free-space angular chirp enhanced delay (FACED) microscope v3.0 for high-speed volumetric neural imaging. This project was launched to overcome the inherent design limitations of the prior system: <strong>significant thermal and mechanical instability</strong> from its off-the-shelf parts, and a fixed 1035nm laser system that was incompatible with <strong>SOTA genetically encoded sensors</strong> optimized for other wavelengths.</p>
+
+            <div class="faced-gallery" role="group" aria-label="FACED v3.0 microscope photographs">
+                <img src="/assets/images/FACED_Tower.png?v=20260412" alt="FACED v3.0 optical tower assembly" width="2331" height="1263" loading="lazy" decoding="async">
+                <div class="faced-gallery-row">
+                    <img src="/assets/images/EntireAssembly1.png?v=20260412" alt="FACED v3.0 full instrument assembly (view 1)" width="1296" height="639" loading="lazy" decoding="async">
+                    <img src="/assets/images/EntireAssembly3.png?v=20260412" alt="FACED v3.0 full instrument assembly (view 2)" width="1315" height="668" loading="lazy" decoding="async">
+                </div>
+            </div>
             
             <ul>
                 <li><strong>System Architecture & Design:</strong> Designed the complete system architecture from the ground up to maximize stability. Modeled all optical paths using ray-tracing simulations in <strong>Zemax OpticStudio</strong> and designed all custom, high-stability mechanical mounts in <strong>Autodesk Inventor</strong>, using more stable materials for mounts to reduce thermal and mechanical drift (everything was precision machined and designed for fixed mounting). Managed all component sourcing, vendor relations, and procurement.</li>
@@ -174,6 +398,7 @@
                 
                 <li><strong>Data Analysis Pipeline:</strong> Developed in-house data analysis pipelines for the post-processing of image stacks from FACED to extract biological data from the high-throughput, multi-terabyte datasets generated by the microscope, enabling quantitative analysis of experimental results.</li>
             </ul>
+            </section>
 
             <h2 id="thesis">Thesis</h2>
 
@@ -183,7 +408,47 @@
             <strong>Yoon, H.A.</strong> MIT 2019 <a href="https://dspace.mit.edu/handle/1721.1/123377">[PDF]</a></p>
 
             <p>For full bibliography, see the <a href="cv.html">Academic CV</a>.</p>
+
+            <dialog id="pub-figure-dialog" class="pub-figure-dialog" aria-label="Publication figure, 8× zoom">
+                <div class="pub-figure-dialog__scrim">
+                    <div class="pub-figure-dialog__panel">
+                        <button type="button" class="pub-figure-dialog__close" aria-label="Close">&times;</button>
+                        <img id="pub-figure-dialog-img" class="pub-figure-dialog__img" src="" alt="">
+                    </div>
+                </div>
+            </dialog>
         </main>
     </div>
+    <script>
+    (function () {
+        var dialog = document.getElementById('pub-figure-dialog');
+        var img = document.getElementById('pub-figure-dialog-img');
+        if (!dialog || !img || typeof dialog.showModal !== 'function') return;
+
+        function openPreview(src, label) {
+            img.src = src;
+            img.alt = label || 'Publication figure (8× zoom)';
+            dialog.showModal();
+        }
+
+        document.querySelectorAll('.pub-row__thumb[data-figure-src]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                openPreview(btn.getAttribute('data-figure-src'), btn.getAttribute('aria-label'));
+            });
+        });
+
+        var closeBtn = dialog.querySelector('.pub-figure-dialog__close');
+        if (closeBtn) closeBtn.addEventListener('click', function () { dialog.close(); });
+
+        var scrim = dialog.querySelector('.pub-figure-dialog__scrim');
+        if (scrim) scrim.addEventListener('click', function (e) {
+            if (e.target === scrim) dialog.close();
+        });
+
+        dialog.addEventListener('close', function () {
+            img.removeAttribute('src');
+        });
+    })();
+    </script>
 </body>
 </html>

@@ -38,9 +38,9 @@ For full bibliography, see the [Academic CV](/cv.html).
 
 ### Under Review
 - Yu, P.*, **Yoon, H.A.**\*, Yang, Y.*, Xu, Y., Gozel, O., Tian, G., Ji, N., Doiron, B. Convergence of cortical and thalamic origins of free behavior correlate in mouse V1. [PDF](https://www.biorxiv.org/content/10.64898/2026.01.07.698022v1.full.pdf) (* = denotes equal contributions) <span class="publication-venue">[Under Review]</span>
+- **Yoon, H.A.**, Afifa, U., Ferrer-Imbert, G., Charles, A., Ji, N. High Axial Resolution Is Necessary for Quantitative Two-Photon Calcium Imaging of Neuronal Populations. [PDF](/assets/neuro/Neuropil_ManuscriptDraft.pdf) <span class="publication-venue">[Under Review]</span>
 
 ### Manuscripts in Preparation
-- **Yoon, H.A.**, Ferrer-Imbert, G., Charles, A., Ji, N. Effects of reducing axial resolution in 2P calcium imaging on retrieving functional neuronal activity.
 - **Yoon, H.A.**, Hong, J. Domain-Adaptive Poisson-Gaussian Diffusion for Low-Light Image Restoration.
 
 ### Work Completed

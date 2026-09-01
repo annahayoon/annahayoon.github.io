@@ -16,7 +16,7 @@ title: Home
       <a href="/teaching.html" class="btn btn-secondary">Teaching</a>
       <a href="/ml-work.html" class="btn btn-secondary">ML projects</a>
     </div>
-    <p class="hero-contact"><a href="/assets/cv/Yoon_CV_Spring2026.pdf" target="_blank">CV</a> • <a href="https://www.linkedin.com/in/ha-yun-anna-yoon" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://scholar.google.com/citations?user=hX04JuYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> • <a href="https://github.com/annahayoon" target="_blank" rel="noopener">GitHub</a> • Reach me at <a href="mailto:anna_yoon@berkeley.edu">anna_yoon@berkeley.edu</a></p>
+    <p class="hero-contact"><a href="/assets/cv/Yoon_CV_Spring2026.pdf" target="_blank">CV</a> • <a href="https://www.linkedin.com/in/ha-yun-anna-yoon" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://scholar.google.com/citations?user=hX04JuYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> • <a href="https://github.com/annahayoon" target="_blank" rel="noopener">GitHub</a> • Reach me at <a href="mailto:annahayoon@gmail.com">annahayoon@gmail.com</a></p>
 
   </div>
 </div>

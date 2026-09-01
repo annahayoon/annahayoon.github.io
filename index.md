@@ -130,7 +130,7 @@ title: Home
 <h2 class="widget-title">Download CV</h2>
 
 <ul>
-<li><a href="/assets/cv/academic_cv.pdf">Academic CV (PDF)</a></li>
+<li><a href="/assets/cv/Yoon_CV_Fall2026.pdf">CV (PDF)</a></li>
 </ul>
 </div>
 

@@ -13,7 +13,7 @@ title: Bio
   <h3>University of California, Berkeley</h3>
   <p class="degree">PhD in Mechanical Engineering <span class="year">(2026)</span></p>
   <ul>
-    <li><strong>Minors:</strong> Machine Learning & Energy Science and Technology</li>
+    <li><strong>Minors:</strong> Machine Learning, Energy Science and Technology</li>
     <li><strong>Dissertation:</strong> "Advanced two-photon fluorescence microscopy for large-scale, high-speed activity imaging in the mouse primary visual cortex"</li>
     <li><strong>Advisor:</strong> Dr. Na Ji</li>
   </ul>

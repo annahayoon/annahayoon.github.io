@@ -4,17 +4,17 @@ title: Bio
 ---
 
 <div class="bio-intro">
-  <p class="lead">I am a PhD candidate in Mechanical Engineering at UC Berkeley with a minor in Machine Learning, specializing in developing deep learning models for high-speed volumetric neural imaging. My research bridges computational neuroscience, computer vision, and biomedical engineering to advance our understanding of neural circuits and brain function.</p>
+  <p class="lead">I received my PhD in Mechanical Engineering from UC Berkeley in August 2026, with a minor in Machine Learning, specializing in developing deep learning models for high-speed volumetric neural imaging. I am now starting at Apple, working on camera hardware, specifically camera calibration. My research bridges computational neuroscience, computer vision, and biomedical engineering to advance our understanding of neural circuits and brain function.</p>
 </div>
 
 ## Education
 
 <div class="education-item">
   <h3>University of California, Berkeley</h3>
-  <p class="degree">PhD in Mechanical Engineering <span class="year">(Expected 2026)</span></p>
+  <p class="degree">PhD in Mechanical Engineering <span class="year">(2026)</span></p>
   <ul>
     <li><strong>Minors:</strong> Machine Learning & Energy Science and Technology</li>
-    <li><strong>Dissertation:</strong> Developing Deep Learning Models for High-Speed Volumetric Neural Imaging</li>
+    <li><strong>Dissertation:</strong> Advanced two-photon fluorescence microscopy for large-scale, high-speed activity imaging in the mouse primary visual cortex</li>
     <li><strong>Advisor:</strong> Dr. Na Ji</li>
   </ul>
 </div>

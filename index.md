@@ -6,7 +6,7 @@ title: Home
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">Ha Yun Anna Yoon</h1>
-    <p class="hero-subtitle">PhD Candidate, UC Berkeley — Machine Learning for Neural Imaging</p>
+    <p class="hero-subtitle">PhD, UC Berkeley — Camera Hardware at Apple — Machine Learning for Neural Imaging</p>
     <p class="hero-description">I build concise, reliable ML systems for high-speed neural imaging. My work bridges systems neuroscience and biophotonics to turn noisy, multimodal data into actionable scientific insight.</p>
 
     <div class="hero-links">
@@ -106,10 +106,10 @@ title: Home
 
 <div class="education-item">
   <h3>University of California, Berkeley</h3>
-  <p class="degree">PhD in Mechanical Engineering <span class="year">(Expected 2026)</span></p>
+  <p class="degree">PhD in Mechanical Engineering <span class="year">(2026)</span></p>
   <ul>
     <li><strong>Minor:</strong> Machine Learning</li>
-    <li><strong>Dissertation:</strong> Developing Deep Learning Models for Fusing Multimodal Neural Imaging Data (Voltage and Calcium) at High Speeds</li>
+    <li><strong>Dissertation:</strong> Advanced two-photon fluorescence microscopy for large-scale, high-speed activity imaging in the mouse primary visual cortex</li>
 
     <li><strong>Advisor:</strong> Dr. Na Ji</li>
   </ul>

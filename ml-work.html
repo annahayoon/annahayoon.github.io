@@ -91,6 +91,7 @@
                 <ul>
                     <li><a href="#diffusion-models">Diffusion Models & Generative AI</a></li>
                     <li><a href="#computer-vision">Computer Vision & Image Processing</a></li>
+                    <li><a href="#classical-ml">Classical ML</a></li>
                     <li><a href="#reinforcement-learning">Deep RL</a></li>
                     <li><a href="#energy-modeling">ML Tools for Energy Systems</a></li>
                 </ul>
@@ -106,6 +107,15 @@
             <h4>The Pupil Tracker: Fast and Efficient Pupil Segmentation and Tracking <a href="assets/ml-work/CS289A_project.pdf" target="_blank" style="font-size: 0.8em; color: #007bff;">[pdf]</a></h4>
             <p class="project-meta"><em>Spring 2022 - CS289 Final Project</em></p>
             <p>To address a significant data processing bottleneck in neuroscience, this project developed a computationally efficient alternative to resource-intensive deep learning models for tracking pupil dynamics for behavioral study. Pupil size and gaze direction are critical, non-invasive proxies for an animal's cognitive state—including arousal, attention, and decision-making—making accurate, high-throughput tracking essential for correlating neural activity with behavior. Existing CNN-based methods like DeepLabCut require days of training and specialized GPUs, creating significant delays in post-processing analysis. This work implemented a "Pupil Tracker" using a classical K-nearest neighbor (KNN) algorithm on binarized image data. KNN was selected for computational efficiency in neuroscience research environments with limited computing resources. Benchmarking against Detectron2 and DeepLabCut revealed massive training overhead (10 days CPU for DeepLabCut, 4 days on 8 V100 GPUs for Detectron2), specialized hardware requirements, and labor-intensive data labeling. KNN's "training-free" implementation, simplicity on binarized data, and CPU-centric performance prioritized speed and accessibility over marginal accuracy gains. The impact was a dramatic increase in experimental throughput: the method <strong>eliminated the training phase entirely</strong> and achieved an inference time of <strong>0.075 seconds per frame</strong>, making it <strong>~20% faster than DeepLabCut</strong> and <strong>60 times faster than Detectron2</strong>, while running on a standard CPU. This efficiency allows researchers to process vastly more behavioral data, accelerating the pace of discovery in systems neuroscience.</p>
+
+            <h3 id="classical-ml">Classical ML</h3>
+            <h4>Genentech</h4>
+            <p class="project-meta"><em>2026 - details to follow once the preprints are available</em></p>
+            <p>Two projects from my work at Genentech will be described here:</p>
+            <ul>
+                <li>One-class classification for anomaly detection</li>
+                <li>Computer vision for tissue and cell type segmentation</li>
+            </ul>
 
             <h3 id="reinforcement-learning">Deep RL</h3>
             <h4>MARL: Learned Memory Allocation in Heterogeneous Memory Systems <a href="assets/ml-work/CS285_project.pdf" target="_blank" style="font-size: 0.8em; color: #007bff;">[pdf]</a></h4>
